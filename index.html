@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue-material@0.7.4"></script>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/vue-material@0.7.4/dist/vue-material.css">
+    </head>
+    <body>
+        <div id="ibc-joining-the-mission">
+
+            <!-- Side Nav -->
+            <div class="sidenav md-card">
+                <md-list>
+                    <md-list-item v-on:click="setPage('The Good News')">
+                        <span>The Good News</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item v-on:click="setPage('The Mission')">
+                        <span>The Mission</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item>
+                        <span>Chicago</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item>
+                        <span>IBC</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item>
+                        <span>UIC</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                </md-list>
+            </div>
+
+            <!-- Page Content -->
+            <div class="current-page">
+                <div v-if="page == 'The Good News'">
+                    The Good News Is Here!
+                </div>
+                <div v-if="page == 'The Mission'">
+                    The Mission Is Here!
+                </div>    
+            </div>
+        </div>
+
+            
+        <script src="main.js"></script>
+    </body>
+</html>
