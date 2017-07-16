@@ -13,8 +13,28 @@
             <!-- Side Nav -->
             <div class="sidenav md-card">
                 <md-list>
+                    <md-list-item v-on:click="setPage('Welcome')">
+                        <span>Welcome</span>
+                        <md-ink-ripple />
+                    </md-list-item>
                     <md-list-item v-on:click="setPage('The Good News')">
                         <span>The Good News</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item v-on:click="setPage('The Individual Angle 01')">
+                        <span>The Individual Angle</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item v-on:click="setPage('Idolatry 01')">
+                        <span>Idolatry</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item v-on:click="setPage('The Cosmic Angle 01')">
+                        <span>The Cosmic Angle</span>
+                        <md-ink-ripple />
+                    </md-list-item>
+                    <md-list-item v-on:click="setPage('The God Angle')">
+                        <span>The God Angle</span>
                         <md-ink-ripple />
                     </md-list-item>
                     <md-list-item v-on:click="setPage('The Mission')">
@@ -38,12 +58,458 @@
 
             <!-- Page Content -->
             <div class="current-page">
-                <div v-if="page == 'The Good News'">
-                    The Good News Is Here!
+
+                <!-- Welcome -->
+                <div v-if="page == 'Welcome'">
+                    <img src="chicago_skyline.png" alt="">
+                    <img src="ibc_logo.png" alt="">
+                    <img src="immanuel_summer_retreat_members.png" alt="">
+
+                    <span>Welcome to</span>
+                    <h2><i>Joining the Mission</i></h2>
+                    <span>Membership at Immanuel</span>
+                    <p>This is for those who want to get to know our church 
+                        at a deeper level and learn what it would mean to 
+                        become part of us and join with us on our mission in Chicago.
+                    </p>    
+                    <p>Work through this material on your own time.
+                        Then come to the next Mission Class.
+                    </p>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Good News')">
+                        Next
+                    </md-button>
                 </div>
-                <div v-if="page == 'The Mission'">
-                    The Mission Is Here!
-                </div>    
+
+                <!-- The Good News -->
+                <div v-if="page == 'The Good News'">
+                    <h1>It’s About the Good News!</h1>
+                    <p>Immanuel Baptist Church is first and foremost about the gospel.</p>
+                    <p>‘Good news’ is the literal meaning of the word ‘gospel’.</p>
+                    <p>And the gospel is the centerpiece of Christianity.</p>
+                    <p>The Apostle Paul says in 1 Corinthians 15:1-4:</p>
+                    <blockquote>“Now, brothers, I want to <u>remind</u> you of the <b>gospel</b> I 
+                        preached to you, which you received and on which you have 
+                        taken your stand. By this <b>gospel</b> you are saved, if you hold 
+                        firmly to the word I preached to you. Otherwise, you have 
+                        believed in vain. For what I received I passed on to you 
+                        as <u>of first importance</u>: that Christ died for our sins 
+                        according to the Scriptures, that he was buried, [and] that 
+                        he was raised on the third day according to the Scriptures.”</blockquote>
+        
+                    <p>In 1 Corinthians 15:1-4 we see that the gospel is of <u>first importance</u>. 
+                        This means that if a church makes anything other than the gospel central, 
+                        it is missing the point.
+                    </p>
+                    </p>The gospel is also something that Christians constantly need to be
+                        <u>reminded</u> of. It’s not just the basics that you believe in order to become a
+                        Christian but then move on from to other things. The gospel is not just the
+                        A-B-Cs but the A-to-Z of the Christian life. It doesn’t just ignite the
+                        Christian life, but is the fuel that keeps it going.
+                    </p>
+                    <p>So what is the gospel? It is that <i>Christ died for our sins according to the
+                        Scriptures, that he was buried, and that he was raised on the third day
+                        according to the Scriptures</i>. It is news about what Jesus has done in time
+                        and space 2,000 years ago. The gospel is a declaration, a report of
+                        something that happened in history (Please read the previous sentence at least
+                        10 times).
+                    </p>
+                    <p>So why is the news of Jesus’ death, burial, and resurrection good?
+                        There are two crucial angles to look at it from… and then a third.
+                    </p>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Welcome')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Individual Angle 01')">
+                        Next
+                    </md-button>
+                </div>
+
+                <!-- The Individual Angle -->
+                <div v-if="page == 'The Individual Angle 01'">
+                    <h1>The Individual Angle</h1>
+                    <p>The first way to understand the goodness of the good news is to
+                        look at what it means for you personally.
+                    </p>
+                    <p>This approach generally looks across the whole Bible and pulls out 
+                        the following categories: God – Man – Christ – Response.
+                    </p>
+                    <p>God is completely perfect. Each of us was made to have a
+                        relationship with God. However, our sin (our willful defiance of
+                        God’s laws and steady determination to set other things, especially
+                        ourselves, up in God’s place) keeps us out of the presence of a
+                        perfect God and in fact justly incurs his judgment. But Jesus (God in
+                        human flesh) took our sin on himself and bore the judgment in our
+                        place on the cross – <i>Christ died <u>for our sins</u> according to the
+                        Scriptures</i>.
+                    </p>
+                    
+                    <p>This is good news because even though we are sinful people who
+                        deserve a holy God’s eternal wrath, we can be united by faith to
+                        Jesus – the One who was sinless and yet suffered in our place on the
+                        cross so that we could be forgiven, justified, reconciled to God, and
+                        adopted into his family forever. There’s nothing we can do to earn
+                        God’s favor. It’s purely a gift of grace! Salvation is something that
+                        has been accomplished for us by Jesus’ death, burial, and
+                        resurrection.
+                    </p>
+                    <p>Jesus’ burial confirms that he really died. And his resurrection
+                        confirms that he was really righteous and his death really atoned for
+                        sins. And so if we repent of our sins and put our trust in Jesus, then
+                        when God looks at us he sees us in his Son, that is, our sins are taken
+                        care of and we are counted righteous. “God made him who had no
+                        sin to be sin for us, so that in him we might become the
+                        righteousness of God” (2 Cor. 5:21).
+                    </p>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Good News')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Individual Angle 02')">
+                        Next
+                    </md-button>
+                </div>
+                <div v-if="page == 'The Individual Angle 02'">
+                    <h1>The Individual Angle</h1>
+                    <p>The gospel says, “You are more sinful than you ever imagined, yet
+                        on account of Christ’s death, burial, and resurrection you are more
+                        accepted than you ever dared dream.” This is what makes
+                        Christianity utterly unique and distinguishes it from all other
+                        religions. As Tim Keller is fond of saying – ‘Religion’ says, “I obey,
+                        therefore I’m accepted.” The gospel says, “I’m accepted, therefore I
+                        obey.” Those are two radically different concepts!
+                    </p>
+                    <p>The illustration on below helps in understanding the
+                        individual aspect of the gospel. It’s called ‘The Gospel Trampoline’.
+                        We encourage you to spend time bouncing on it. Actually, spend
+                        the rest of your life going deeper and higher!
+                    </p>
+                    
+                    <img src="gospel_trampoline.png" alt="">
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Individual Angle 01')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 01')">
+                        Next
+                    </md-button>
+                </div>
+                
+                <!-- Idolatry -->
+                <div v-if="page == 'Idolatry 01'">
+                    <h1>Idolatry</h1>
+                    <p>As we go deeper into the darkness that is in our hearts, we will peel 
+                        back more and more layers of idols.  We should constantly be seeking 
+                        to go underneath the surface sins and see the deep-seated root sins.  
+                        The deeper we go in repentance the higher we can bounce in faith as 
+                        we realize the amazing truth of the gospel – I am completely sinful 
+                        and yet on account of Christ’s death, burial, and resurrection I am 
+                        completely accepted by God!  As Martin Luther said, “Simul justus et 
+                        peccator” – simultaneously just and a sinner.  It’s amazing!  And it’s 
+                        also the key to transformation because the higher we bounce in faith, 
+                        the more we worship God for his grace and thus the less prone we will 
+                        be to worship our idols.
+                    </p>
+                    <h2>Some Questions That Help Expose Our Idols</h2>
+                    <ul>
+                        <li>What other than Jesus has become your main source of significance, 
+                            happiness, meaning and purpose?
+                        </li>
+                        <li>What other than being a child of God are you using as your primary 
+                            identity?
+                        </li>
+                        <li>What have you used to make yourself feel accepted or worthy before God, 
+                            yourself and others?
+                        </li>
+                        <li>What do I worry about most?  What, if I failed or lost it, would cause 
+                            me to question whether or not I wanted to live?
+                        </li>
+                        <li>What do I rely on or comfort myself with when things go bad or get difficult? 
+                            What do I do to cope/feel better?
+                        </li>
+                        <li>What do I think most easily about? What does my mind go to when I am free? 
+                            What preoccupies me? What do I daydream about?
+                        </li>
+                        <li>What makes me feel the most self-worth? What am I the proudest of? 
+                            What do I want to be known for?
+                        </li>
+                        <li>What do I lead with in conversations?  What do I want to make sure 
+                            that people know about me fairly early on in the conversation or relationship?
+                        </li>
+                        <li>What prayer, unanswered, would make me seriously think about turning away from God?</li>
+                        <li>What do I really want and expect out of life? What would really make me happy? 
+                            What is my hope for the future?
+                        </li>
+                        <li>Whom must I please?  Whose opinion of me counts?  
+                            From whom do I desire approval and fear rejection?
+                        </li>
+                        <li>On whose shoulders does the well-being of my world rest?  
+                            Whose coming into my life or political power would make everything better?
+                            In what situations do I feel pressured or tense?  Confident and relaxed?  How do I cope?
+                        </li>
+                    </ul>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Individual Angle 02')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 02')">
+                        Next
+                    </md-button>
+                </div>
+                <div v-if="page == 'Idolatry 02'">
+                    <h1>Idolatry</h1>
+                    <h2>Going Deeper</h2>
+                    <p>An idol is far more than a statue someone burns incense to.  
+                        Ezekiel 14 talks about idols in the heart.  
+                        In this sense, an idol represents the central value by which all other values are 
+                        measured and judged and that which all other values serve.  
+                        Worshipping such a false god is ultimately that which fuels the sin in our lives. 
+                        It is the sin underneath most sins.  
+                        It is the root from which most behavior is simply the fruit.  
+                        Do you recognize these idols in your heart?
+                    </p>
+                    <p>Review the picture below and the list and grid on the next few pages because 
+                        the greater awareness we have of our sin combined with a growing awareness of 
+                        God’s holiness is what will enlarge our awe and wonder at God’s grace in the cross of Christ.
+                    </p>
+                    <img src="gods_holiness_vs_mans_sinfulness.png" alt="">
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 01')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 03')">
+                        Next
+                    </md-button>
+                </div>
+                <div v-if="page == 'Idolatry 03'">
+                    <h1>Idolatry</h1>
+                    <h2>Common Idolatries List</h2>
+                    <ul>
+                        <li><b>Comfort idolatry</b>: “Life only has meaning/I only have worth if — 
+                            I have this kind of pleasure experience, a particular quality of life.”
+                        </li>
+                        <li><b>Approval idolatry</b>: “Life only has meaning/I only have worth if — 
+                            I am loved and respected by —.”
+                        </li>
+                        <li><b>Control idolatry</b>: “Life only has meaning/I only have worth if — 
+                            I am able to get mastery over my life in the area of —.”
+                        </li>
+                        <li><b>Power idolatry</b>: “Life only has meaning/I only have worth if — 
+                            I have power and influence over others.”
+                        </li>
+                        <li><b>Image idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I have a particular kind of look or body image.”
+                        </li>
+                        <li><b>Helping idolatry</b>: “Life only has meaning /I only have worth if — 
+                            people are dependent on me and need me.”
+                        </li>
+                        <li><b>Dependence idolatry</b>: “Life only has meaning /I only have worth if — 
+                            someone is there to protect me and keep me safe.”
+                        </li>
+                        <li><b>Independence idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I am completely free from obligations or responsibilities to take care of someone.”
+                        </li>
+                        <li><b>Work idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I am highly productive, getting a lot done.”
+                        </li>
+                        <li><b>Achievement idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I am being recognized for my accomplishments, 
+                            if I am excelling in my career.”
+                        </li>
+                        <li><b>Materialism idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I have a certain level of wealth, financial freedom, and very nice possessions.”
+                        </li>
+                        <li><b>Religion idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I am adhering to my religion’s moral codes and accomplished in it’s activities.”
+                        </li>
+                        <li><b>Individual person idolatry</b>: “Life only has meaning/ I only have worth if — 
+                            this one person is in my life and happy there and/or happy with me.”
+                        </li>
+                        <li><b>Irreligion idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I feel I am totally independent of organized religion and with a self-made morality.”
+                        </li>
+                        <li><b>Racial/cultural idolatry</b>: “Life only has meaning /I only have worth if — 
+                            my race and culture is ascendant and recognized as superior.”</li>
+                        <li><b>Inner ring idolatry</b>: “Life only has meaning /I only have worth if — 
+                            a particular social grouping or professional grouping or other group lets me in.”
+                        </li>
+                        <li><b>Family idolatry</b>: “Life only has meaning /I only have worth if — 
+                            my children and/or my parents are happy and happy with me.”
+                        </li>
+                        <li><b>Relationship idolatry</b>: “Life only has meaning /I only have worth if — 
+                            Mr. or Ms. ‘Right’ is in love with me.”
+                        </li>
+                        <li><b>Suffering idolatry</b>: “Life only has meaning /I only have worth if — 
+                            I am hurting, in a problem — 
+                            only then do I feel noble or worthy of love or am able to deal with guilt.”
+                        </li>
+                        <li><b>Ideology idolatry</b>: “Life only has meaning /I only have worth if — 
+                            my political or social cause or party is making progress and ascending 
+                            in influence or power.”
+                        </li>
+                    </ul>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 02')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 04')">
+                        Next
+                    </md-button>
+                </div>
+                <div v-if="page == 'Idolatry 04'">
+                    <h1>Idolatry</h1>
+                    <h2>Idolatry Grid</h2>
+                    <md-table v-once>
+                        <md-table-header>
+                            <md-table-row>
+                                <md-table-head><u>WHAT WE SEEK</u></md-table-head>
+                                <md-table-head>Price We're Willing To Pay</md-table-head>
+                                <md-table-head>Our Greatest Nightmare</md-table-head>
+                                <md-table-head>How We Often Make Others Feel</md-table-head>
+                                <md-table-head>How We Often Feel</md-table-head>
+                            <md-table-row>
+                        </md-table-header>
+                        <md-table-body>
+                            <md-table-row>
+                                <md-table-cell><u>COMFORT</u> (privacy, lack of stress, freedom)</md-table-cell>
+                                <md-table-cell>Reduced productivity</md-table-cell>
+                                <md-table-cell>Stress/demands</md-table-cell>
+                                <md-table-cell>Hurt</md-table-cell>
+                                <md-table-cell>Bored</md-table-cell>
+                            </md-table-row>
+                            <md-table-row>
+                                <md-table-cell><u>APPROVAL</u> (affirmation, love, relationship)</md-table-cell>
+                                <md-table-cell>Less independence</md-table-cell>
+                                <md-table-cell>Rejection</md-table-cell>
+                                <md-table-cell>Smothered</md-table-cell>
+                                <md-table-cell>Cowardly</md-table-cell>
+                            </md-table-row>
+                            <md-table-row>
+                                <md-table-cell><u>CONTROL</u> (self-discipline, certainty, standards)</md-table-cell>
+                                <md-table-cell>Loneliness/spontaneity</md-table-cell>
+                                <md-table-cell>Uncertainty</md-table-cell>
+                                <md-table-cell>Condemned</md-table-cell>
+                                <md-table-cell>Worried</md-table-cell>
+                            </md-table-row>
+                            <md-table-row>
+                                <md-table-cell><u>POWER</u> (success, winning, influence)</md-table-cell>
+                                <md-table-cell>Burdened/responsibility</md-table-cell>
+                                <md-table-cell>Humiliation</md-table-cell>
+                                <md-table-cell>Used</md-table-cell>
+                                <md-table-cell>Angry</md-table-cell>
+                            </md-table-row>
+                        </md-table-body>
+                    </md-table>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 03')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 01')">
+                        Next
+                    </md-button>
+                </div>   
+
+                <!-- The Cosmic Angle -->
+                <div v-if="page == 'The Cosmic Angle 01'">
+                    <h1>The Cosmic Angle</h1>
+                    <p>Another way to understand the goodness of the good news after you’ve seen it 
+                        from the individual angle is to look at what it means for the whole world.
+                    </p>
+                    <p>This approach generally looks along the story-line of the Bible and sees the 
+                        following plot:  Creation – Fall – Redemption – New Creation
+                    </p>
+                    <p>God created the world in perfect harmony.  The first humans rebelled against him, 
+                        thus plunging the world into disarray, not just individually, but interpersonally, 
+                        societally, ecologically, spiritually, etc…  But God embarked on a plan of 
+                        redemption that focused largely on the nation of Israel and reached its climax in 
+                        the death, burial, and resurrection of Jesus the Messiah.  
+                        Jesus started something that he will return again one day to wrap up when he remakes 
+                        the whole cosmos (including the bodies of those who trusted in him) to be in a perfect, 
+                        eternal state.  This is the overarching narrative of the <i>Scriptures</i>.
+                    </p>
+                    <p>This is good news because even though we live in a world that is full of evil, 
+                        injustice, pain, and heartache as a result of our sin, Jesus has begun to make 
+                        all things right.  He died to deal definitively with our sin, and he rose again 
+                        to inaugurate the New Creation as its first installment!
+                    </p>
+                    <p>The gospel is no less than the justification of individual sinners by grace alone, 
+                        through faith alone, on the basis of Christ’s death, burial and resurrection alone.  
+                        But there’s more!  The hope offered in the Scriptures is not that we can 
+                        “die and go to heaven.”  It’s that “heaven” is coming down to swallow up this earth.  
+                        Jesus died and rose again to defeat death and sin and evil and will come again one 
+                        day to put the world right and put us in it to live with perfect interpersonal, 
+                        societal, ecological, and spiritual harmony.
+                    </p>
+                    <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 04')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 02')">
+                        Next
+                    </md-button>
+                </div>
+                <div v-if="page == 'The Cosmic Angle 02'">
+                    <h1>The Cosmic Angle</h1>
+                    <p>One of the ways the Bible talks about this is by referring to the good news 
+                        of the kingdom of God.  Jesus began his earthly ministry by saying, “The time has come…  
+                        The kingdom of God is near.  Repent and believe the good news” (Mk. 1:15).  
+                        Toward the end of his earthly ministry Jesus said that “this gospel of the 
+                        kingdom will be preached in the whole world as a testimony to all nations, 
+                        and then the end will come” (Mt. 24:14).  And in Acts 8:12 we see Phillip preaching 
+                        “the good news of the kingdom of God and the name of Jesus Christ.”  
+                        [Christ = Messiah, the long-awaited king who ushers in the long-anticipated kingdom of God]  
+                        Jesus’ death, burial, and resurrection began a new kingdom – a subversive kingdom of 
+                        love and peace and justice that will one day rule the whole world.  
+                        Until then, the resurrected Christ sits at the right hand of the Father on his throne… reigning.
+                    </p>
+                    <p>The good news refers to more than just individual salvation.  It has a cosmic dimension.  
+                        Jesus – through his death, burial, and resurrection – has begun to redeem and remake the whole world!  
+                        This brings hope.  God doesn’t just have a wonderful plan for your life; 
+                        he has a wonderful plan for the whole universe!  
+                        See Mt. 19:28, Acts 3:21, and especially Col. 1:20.
+                    </p>
+                    <p>Perhaps the diagram below will be of some help in getting the ‘big picture’.</p>
+                    <img src="cosmic_angle_timeline.png" alt="">
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 01')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The God Angle')">
+                        Next
+                    </md-button>
+                </div>
+                <div v-if="page == 'The God Angle'">
+                    <h1>The God Angle</h1>
+                    <p>If the gospel is left just at personal escape from judgment and imputation of Christ’s righteousness 
+                        and the hope that the world is being set right, then it’s missing the main point, the thing that 
+                        makes the news of Christ’s death, burial, and resurrection GOOD, and that’s GOD!
+                    </p>
+                    <p>The gospel is good news because it gets us to God, the source of all good!</p>
+                    <p>1 Peter 3:18 says, “Christ died for sins once for all, the righteous for the unrighteous, 
+                        to bring you to God.”  This is the greatest good of the gospel.  
+                        He is the perfection of all beauty and the source of all satisfaction.
+                    </p>
+                    <p>And Revelation 21, which describes the consummation of the kingdom 
+                        (the return of Jesus to transform this world and us), 
+                        talks about the final state as a perfected society, a city in fact.  
+                        And there we read, “Now the dwelling of God is with men, and he will live with them.  
+                        They will be his people, and God himself will be with them and be their God” (v. 3).  
+                        The greatest thing about the New Creation will be that God is there!
+                    </p>
+                    <p>What amazing news!  Because of Jesus’ death, burial, and resurrection we can be forgiven and 
+                        accepted into God’s everlasting kingdom where we will enjoy him together forever and ever – 
+                        the infinite source of joy and delight!
+                    </p>
+                    <p>For more about this concept, check out John Piper’s book, God is the Gospel: 
+                        Meditations on God’s Love as the Gift of Himself.  Here’s just a snippet:
+                    </p>
+                    <blockquote>The highest, best, final, decisive good of the gospel, without 	which no other gifts would be good, 
+                        is the glory of God in the 	face of Christ revealed for our everlasting enjoyment.  
+                        The saving love of God is God’s commitment to do everything necessary to enthrall us with what 
+                        is most deeply and 	durably satisfying, namely himself.  Since we are sinners and have no right 
+                        and no desire to be enthralled with God, therefore God’s love enacted a plan of redemption to provide 
+                        that right and that desire.  The supreme demonstration of God’s love was the sending of his Son to die 
+                        for our sins and to rise again so that sinners might have the right to approach God and might have the 
+                        pleasure of his presence forever. (pp. 	13-14)
+                    </blockquote>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 02')">
+                        Prev
+                    </md-button>
+                    <md-button class="md-raised-primary" v-on:click="setPage('The Mission')">
+                        Next
+                    </md-button>
+
             </div>
         </div>
 
