@@ -15,79 +15,107 @@
         <!-- Side Nav -->
         <div class="sidenav md-card">
             <md-list>
-                <md-list-item v-on:click="setPage('Welcome')">
-                    <span>Welcome</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('The Good News')">
-                    <span>The Good News</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('The Individual Angle 01')">
-                    <span>The Individual Angle</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Idolatry 01')">
-                    <span>Idolatry</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('The Cosmic Angle 01')">
-                    <span>The Cosmic Angle</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('The God Angle')">
-                    <span>The God Angle</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('The Mission')">
-                    <span>The Mission</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Get Vocal')">
-                    <span>Get Vocal</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Get Vocational 01')">
-                    <span>Get Vocational</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Get Involved 01')">
-                    <span>Get Involved</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Joining the Mission')">
-                    <span>Joining the Mission</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Why Membership? 01')">
-                    <span>Why Membership?</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('How Do I Become A Member?')">
-                    <span>How Do I Become A Member?</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('What Do I Do As A Member?')">
-                    <span>What Do I Do As A Member?</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                <md-list-item v-on:click="setPage('Our Church Covenant')">
-                    <span>Our Church Covenant</span>
-                    <md-ink-ripple />
-                </md-list-item>
-                
                 <md-list-item>
-                    <span>Chicago</span>
+                    <md-button md-menu-trigger v-on:click="setPage('Welcome')"><span>Welcome</span>
                     <md-ink-ripple />
+                    </md-button>
                 </md-list-item>
                 <md-list-item>
-                    <span>IBC</span>
-                    <md-ink-ripple />
+                    <md-menu md-size="4">
+                        <md-button md-menu-trigger><span>The Good News</span>
+                        <md-ink-ripple />
+                        </md-button>
+                        <md-menu-content>
+                            <md-menu-item v-on:click="setPage('The Good News')">The Good News</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The Individual Angle 01')">The Individual Angle</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Idolatry 01')">Idolatry</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The Cosmic Angle')">The Cosmic Angle</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The God Angle')">The God Angle</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
                 </md-list-item>
                 <md-list-item>
-                    <span>UIC</span>
-                    <md-ink-ripple />
+                    <md-menu>
+                        <md-button md-menu-trigger><span>The Mission</span>
+                        <md-ink-ripple />
+                        </md-button>
+                        <md-menu-content>
+                            <md-menu-item v-on:click="setPage('The Mission')">The Mission</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Get Vocal')">Get Vocal</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Get Vocational 01')">Get Vocational</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Get Involved 01')">Get Involved</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
                 </md-list-item>
+                <md-list-item>
+                    <md-menu md-size="5">
+                        <md-button md-menu-trigger><span>Joining The Mission</span>
+                        <md-ink-ripple />
+                        </md-button>
+                        <md-menu-content>
+                            <md-menu-item v-on:click="setPage('Joining The Mission')">Joining The Mission</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Why Membership? 01')">Why Membership</md-menu-item>
+                            <md-menu-item v-on:click="setPage('How Do I Become A Member?')">How Do I Become A Member?</md-menu-item>
+                            <md-menu-item v-on:click="setPage('What Do I Do As A Member?')">What Do I Do As A Member?</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-list-item>
+                <md-list-item>
+                    <md-menu md-size="6">
+                        <md-button md-menu-trigger><span>Immanuel Baptist Church</span>
+                        <md-ink-ripple />
+                        </md-button>
+                        <md-menu-content>
+                            <md-menu-item v-on:click="setPage('Our Church Covenant')">Our Church Covenant</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s History')">Immanuel's History</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s Mission')">Immanuel's Mission</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s Vision')">Immanuel's Vision</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s Values')">Immanuel's Values</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s Organizational Structure')">Immanuel's Organizational Structure</md-menu-item>
+                            <md-menu-item v-on:click="setPage('On Complementarianism')">On Complementarianism</md-menu-item>
+                            <md-menu-item v-on:click="setPage('On Denominationalism')">On Denominationalism</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s Ministry Structure')">Immanuel's Ministry Structure</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Immanuel\'s Ministry Opportunities')">Immanuel's Ministry Opportunities</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-list-item>
+                 <md-list-item>
+                    <md-menu md-size="4">
+                        <md-button md-menu-trigger><span>Church In The City</span>
+                        <md-ink-ripple />
+                        </md-button>
+                        <md-menu-content>
+                            <md-menu-item v-on:click="setPage('Church In The City')">Church In The City</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The Theology')">The Theology</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The History')">The History</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The Need')">The Need</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The Method')">The Method</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The City And Immanuel')">The City And Immanuel</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Chicago')">Chicago</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-list-item> 
+                 <md-list-item>
+                    <md-menu md-size="4">
+                        <md-button md-menu-trigger><span>Chicago</span>
+                        <md-ink-ripple />
+                        </md-button>
+                        <md-menu-content>
+                            <md-menu-item v-on:click="setPage('Chicago')">Chicago</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Chicago History')">Chicago History</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Chicago Statistics')">Chicago Statistics</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Chicago Neighborhoods')">Chicago Neighborhoods</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The Method')">The Method</md-menu-item>
+                            <md-menu-item v-on:click="setPage('The City And Immanuel')">The City And Immanuel</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Chicago')">Chicago</md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-list-item>
+                <md-list-item>
+                    <md-button md-menu-trigger v-on:click="setPage('Appendum')"><span>Appendum</span>
+                    <md-ink-ripple />
+                    </md-button>
+                </md-list-item> 
             </md-list>
         </div>
 
@@ -221,36 +249,25 @@
                 <h1>Idolatry</h1>
                 <h2>Some Questions That Help Expose Our Idols</h2>
                 <ul>
-                    <li>What other than Jesus has become your main source of significance, happiness, meaning and purpose?
-                    </li>
-                    <li>What other than being a child of God are you using as your primary identity?
-                    </li>
-                    <li>What have you used to make yourself feel accepted or worthy before God, yourself and others?
-                    </li>
+                    <li>What other than Jesus has become your main source of significance, happiness, meaning and purpose?</li>
+                    <li>What other than being a child of God are you using as your primary identity?</li>
+                    <li>What have you used to make yourself feel accepted or worthy before God, yourself and others?</li>
                     <li>What do I worry about most? What, if I failed or lost it, would cause me to question whether or not I
-                        wanted to live?
-                    </li>
+                        wanted to live?</li>
                     <li>What do I rely on or comfort myself with when things go bad or get difficult? What do I do to cope/feel
-                        better?
-                    </li>
+                        better?</li>
                     <li>What do I think most easily about? What does my mind go to when I am free? What preoccupies me? What
-                        do I daydream about?
-                    </li>
-                    <li>What makes me feel the most self-worth? What am I the proudest of? What do I want to be known for?
-                    </li>
+                        do I daydream about?</li>
+                    <li>What makes me feel the most self-worth? What am I the proudest of? What do I want to be known for?</li>
                     <li>What do I lead with in conversations? What do I want to make sure that people know about me fairly early
-                        on in the conversation or relationship?
-                    </li>
+                        on in the conversation or relationship?</li>
                     <li>What prayer, unanswered, would make me seriously think about turning away from God?</li>
                     <li>What do I really want and expect out of life? What would really make me happy? What is my hope for the
-                        future?
-                    </li>
-                    <li>Whom must I please? Whose opinion of me counts? From whom do I desire approval and fear rejection?
-                    </li>
+                        future?</li>
+                    <li>Whom must I please? Whose opinion of me counts? From whom do I desire approval and fear rejection?</li>
                     <li>On whose shoulders does the well-being of my world rest? Whose coming into my life or political power
                         would make everything better? In what situations do I feel pressured or tense? Confident and relaxed?
-                        How do I cope?
-                    </li>
+                        How do I cope?</li>
                 </ul>
                 <md-button class="md-raised-primary" v-on:click="setPage('The Individual Angle 02')">
                     Prev
@@ -266,12 +283,10 @@
                     this sense, an idol represents the central value by which all other values are measured and judged and
                     that which all other values serve. Worshipping such a false god is ultimately that which fuels the sin
                     in our lives. It is the sin underneath most sins. It is the root from which most behavior is simply the
-                    fruit. Do you recognize these idols in your heart?
-                </p>
+                    fruit. Do you recognize these idols in your heart?</p>
                 <p>Review the picture below and the list and grid on the next few pages because the greater awareness we have
                     of our sin combined with a growing awareness of God’s holiness is what will enlarge our awe and wonder
-                    at God’s grace in the cross of Christ.
-                </p>
+                    at God’s grace in the cross of Christ.</p>
                 <a href="gods_holiness_vs_mans_sinfulness.png" target="_blank"><img src="gods_holiness_vs_mans_sinfulness.png" alt=""></a>
                 <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 01')">
                     Prev
@@ -285,10 +300,8 @@
                 <h2>Common Idolatries List</h2>
                 <ul>
                     <li><b>Comfort idolatry</b>: “Life only has meaning/I only have worth if — I have this kind of pleasure experience,
-                        a particular quality of life.”
-                    </li>
-                    <li><b>Approval idolatry</b>: “Life only has meaning/I only have worth if — I am loved and respected by —.”
-                    </li>
+                        a particular quality of life.”</li>
+                    <li><b>Approval idolatry</b>: “Life only has meaning/I only have worth if — I am loved and respected by —.”</li>
                     <li><b>Control idolatry</b>: “Life only has meaning/I only have worth if — I am able to get mastery over
                         my life in the area of —.”
                     </li>
@@ -579,7 +592,8 @@
                 </p>
                 <p>Vocalizing the gospel is called evangelism – literally good newsing. A good resource for this is Mark Dever’s
                     slim volume called The Gospel & Personal Evangelism. Some helpful tools in learning how to evangelize
-                    are:</p>
+                    are:
+                </p>
                 <ul>
                     <li><a href="http://www.matthiasmedia.com.au/2wtl/" target="_blank">Ways to Live</a> & <a href="http://www.christianityexplained.com/"
                             target="_blank">Christianity Explained</a> (emphasizing the individual angle)</li>
@@ -767,12 +781,12 @@
                 <md-button class="md-raised-primary" v-on:click="setPage('Get Involved 01')">
                     Prev
                 </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Joining the Mission')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Joining The Mission')">
                     Next
                 </md-button>
             </div>
-            <div v-if="page == 'Joining the Mission'">
-                <h1>Joining the Mission</h1>
+            <div v-if="page == 'Joining The Mission'">
+                <h1>Joining The Mission</h1>
                 <h2>Church Membership</h2>
                 <p>So the marvelous truth of what Jesus accomplished in his death, burial, and resurrection is the greatest
                     news that could ever be told. It changes everything.
@@ -784,7 +798,7 @@
                     (cf. 2Pet. 3:13) where those of us who belong to Christ will dwell!
                 </p>
                 <p>And finally, we are forgiven and freed so that we can feast on the richest of fare forever… and that is God!
-                    </p>
+                </p>
                 <p>This never grows old. It is the reality we will progressively revel in for all eternity and thus the thing
                     that should occupy us all our days in this life. This is the Good News.
                 </p>
@@ -793,8 +807,7 @@
                     neighborhood God has called us to. This is our mission.
                 </p>
                 <p>
-                    But there’s still one final and crucial piece of the puzzle. <b>This mission is not a solo mission!</b> 
-                    Just as much as God is calling you to repent and believe the gospel and then to get vocal, get a vocation,
+                    But there’s still one final and crucial piece of the puzzle. <b>This mission is not a solo mission!</b>                    Just as much as God is calling you to repent and believe the gospel and then to get vocal, get a vocation,
                     and get involved, God is also calling you to join a local church where you live. This is part of the
                     whole package. Becoming a member of a local church is how you join the mission.
                 </p>
@@ -829,7 +842,8 @@
                         <li>Group Project</li>
                         <ul>
                             <li>“It’s impossible to avoid community and be close to Jesus. Wherever Jesus is, there are other
-                                people.”</li>
+                                people.”
+                            </li>
                             <li>Matthew 16:18 – “I will build my church, and the gates of hell will not overcome it.”</li>
                         </ul>
                         <li>The Book of Acts</li>
@@ -854,25 +868,26 @@
                             <li>"The task is bigger than any one person"</li>
                         </ul>
                         <li>Romans 12:5 – “In Christ, we who are many form one body, and each member belongs to all the others.”</li>
-                        <li>1 Corinthians 12:21 – “The eye cannot say to the hand, ‘I don’t need you!’  And the head cannot say to the feet, ‘I don’t need you!’”</li>
+                        <li>1 Corinthians 12:21 – “The eye cannot say to the hand, ‘I don’t need you!’ And the head cannot say
+                            to the feet, ‘I don’t need you!’”</li>
                         <li>We all need each other…</li>
                     </ul>
-                <li>Community provides
-                    <u>encouragement</u>.</li>
+                    <li>Community provides
+                        <u>encouragement</u>.</li>
                     <ul>
                         <li>Three Directions</li>
-                            <ul>
-                                <li>Irreligion</li>
-                                <li>Gospel</li>
-                                <li>Religion</li>
-                            </ul>
+                        <ul>
+                            <li>Irreligion</li>
+                            <li>Gospel</li>
+                            <li>Religion</li>
+                        </ul>
                         <li>Regular rhythm of weekly worship:</li>
-                            <ul>
-                                <li><i>Proclamation</i></li>
-                                <li><i>Ordinances</i></li>
-                                <li><i>Singing</i></li>
-                                <li><i>Fellowship</i></li>
-                            </ul>
+                        <ul>
+                            <li><i>Proclamation</i></li>
+                            <li><i>Ordinances</i></li>
+                            <li><i>Singing</i></li>
+                            <li><i>Fellowship</i></li>
+                        </ul>
                         <li>Church is more than Sundays, however...</li>
                         <li>We need other people to help us see how the gospel applies to our lives.</li>
                     </ul>
@@ -887,64 +902,87 @@
             <div v-if="page == 'Why Membership? 02'">
                 <h1>Why Membership?</h1>
                 <ol start="4">
-                    <li>Community teaches <u>submission</u>.</li>
+                    <li>Community teaches
+                        <u>submission</u>.</li>
+                    <ul>
+                        <li>suspicion => authority
+                            <=r ebellion</li>
+                                <li>Arena:</li>
+                                <ul>
+                                    <li>Family (Eph. 5:22 – 6:4)</li>
+                                    <li>Job (Eph. 6:5-9)</li>
+                                    <li>Government (Rom. 13:1-7)</li>
+                                </ul>
+                                <li>Hebrews 10:25 – “Do not give up meeting together.”</li>
+                                <li>Ephesians 5:21 – “Submit to one another out of reverence for Christ.”</li>
+                                <li>Mission --> Church > Elders</li>
+                                <li>Hebrews 13:17 – “Obey your leaders and submit to their authority…”</li>
+                                <li>GOSPEL = God paid the death penalty for our treason in the person of Jesus.</li>
+                    </ul>
+                    <li>Community allows
+                        <u>accountability</u>.</li>
+                    <ul>
+                        <li>Hebrews 3:12-13 – “See to it, brothers, that none of you has a sinful, unbelieving heart that turns
+                            away from the living God. But encourage one another daily, as long as it is called Today, so
+                            that none of you may be hardened by sin’s deceitfulness.”</li>
+                        <li>We need to be “kept in line with the truth of the gospel” (Gal. 2:14).</li>
+                        <li>We can’t just trust ourselves to do that!</li>
+                        <li>‘One Another’ Commands:</li>
                         <ul>
-                            <li>suspicion => authority <= rebellion</li>
-                            <li>Arena:</li>
-                            <ul>
-                                <li>Family (Eph. 5:22 – 6:4)</li>
-                                <li>Job (Eph. 6:5-9)</li>
-                                <li>Government (Rom. 13:1-7)</li>
-                            </ul>
-                            <li>Hebrews 10:25 – “Do not give up meeting together.”</li>
-                            <li>Ephesians 5:21 – “Submit to one another out of reverence for Christ.”</li>
-                            <li>Mission --> Church > Elders</li>
-                            <li>Hebrews 13:17 – “Obey your leaders and submit to their authority…”</li>
-                            <li>GOSPEL = God paid the death penalty for our treason in the person of Jesus.</li>
+                            <li>(especially Luke 17:3; Colossians 3:16; Romans 15:14; James 5:16!!)</li>
                         </ul>
-                    <li>Community allows <u>accountability</u>.</li>
-                        <ul>
-                            <li>Hebrews 3:12-13 – “See to it, brothers, that none of you has a sinful, unbelieving heart that turns away from the living God.  But encourage one another daily, as long as it is called Today, so that none of you may be hardened by sin’s deceitfulness.”</li>
-                            <li>We need to be “kept in line with the truth of the gospel” (Gal. 2:14).</li>
-                            <li>We can’t just trust ourselves to do that!</li>
-                            <li>‘One Another’ Commands:</li>
-                            <ul>            
-                                <li>(especially Luke 17:3; Colossians 3:16; Romans 15:14; James 5:16!!)</li>
-                            </ul>
-                            <li>Church Discipline (see Matthew 18:15-17 and 1 Corinthians 5)</li>
-                        </ul>
-                    <li>Community requires <u>commitment</u>.</li>
-                        <ul>For some more on these ideas we encourage you to pick up Joshua Harris’ little book called, 
-                            <a href="http://amzn.com/1590523652" target="_blank">Stop Dating the Church: Fall in Love with the Family of God</a> or 
-                            Kevin DeYoung and Ted Kluck’s 
-                            <a href="http://amzn.com/0802458378" target="_blank">Why We Love the Church: In Praise of Institutions and Organized Religion</a>.
-                        </ul>
+                        <li>Church Discipline (see Matthew 18:15-17 and 1 Corinthians 5)</li>
+                    </ul>
+                    <li>Community requires
+                        <u>commitment</u>.</li>
+                    <ul>For some more on these ideas we encourage you to pick up Joshua Harris’ little book called,
+                        <a href="http://amzn.com/1590523652" target="_blank">Stop Dating the Church: Fall in Love with the Family of God</a>                        or Kevin DeYoung and Ted Kluck’s
+                        <a href="http://amzn.com/0802458378" target="_blank">Why We Love the Church: In Praise of Institutions and Organized Religion</a>.
+                    </ul>
                 </ol>
                 <h2>FAQs</h2>
                 <p><i>Okay, but did Jesus and the NT really have in mind all this (buildings and budgets and membership processes) when they talked about Christian community?</i></p>
                 <ol>
-                    <li>An understanding of the <u>GOSPEL</u>!</li>
-                    <li>A sense of <u>mission</u>.</li>
-                    <li>A regular <u>gathering</u>.</li>
-                    <li><u>Biblical teaching</u>.</li>
-                    <li>Participation in the <u>ordinances</u> (<u>baptism</u> & <u>the Lord's Table</u>).</li>
-                    <li>Pastoral <u>leadership</u>.</li>
-                    <li><u>Accountability</u>.</li>
+                    <li>An understanding of the
+                        <u>GOSPEL</u>!</li>
+                    <li>A sense of
+                        <u>mission</u>.</li>
+                    <li>A regular
+                        <u>gathering</u>.</li>
+                    <li>
+                        <u>Biblical teaching</u>.</li>
+                    <li>Participation in the
+                        <u>ordinances</u> (
+                        <u>baptism</u> &
+                        <u>the Lord's Table</u>).</li>
+                    <li>Pastoral
+                        <u>leadership</u>.</li>
+                    <li>
+                        <u>Accountability</u>.</li>
                 </ol>
                 <p><i>Okay, but did Jesus and the NT really have in mind all this (buildings and budgets and membership processes) when they talked about Christian community?</i></p>
                 <ul>
                     <li>There’s no perfect church!</li>
-                    <li>“If you were to join a perfect church, I am sure it would not be perfect after you had been admitted into it.” – C.H. Spurgeon</li>
+                    <li>“If you were to join a perfect church, I am sure it would not be perfect after you had been admitted
+                        into it.” – C.H. Spurgeon</li>
                 </ul>
                 <p><i>But church is so boring and draining!</i></p>
                 <ul>
                     <li>Church ≠ club</li>
-                    <li><s>Consumerism</s></li>
-                    <li><s>Perfectionism</s></li>
-                    <li><s>Individualism</s></li>
-                    <li><s>Religiosity</s></li>
+                    <li>
+                        <s>Consumerism</s>
+                    </li>
+                    <li>
+                        <s>Perfectionism</s>
+                    </li>
+                    <li>
+                        <s>Individualism</s>
+                    </li>
+                    <li>
+                        <s>Religiosity</s>
+                    </li>
                 </ul>
-                <li>GOSPEL  +  MISSION  +  CHURCH  =  !!!!!</li>
+                <li>GOSPEL + MISSION + CHURCH = !!!!!</li>
                 <md-button class="md-raised-primary" v-on:click="setPage('Why Membership? 01')">
                     Prev
                 </md-button>
@@ -955,7 +993,8 @@
             <div v-if="page == 'How Do I Become A Member?'">
                 <h1>How Do I Become A Member?</h1>
                 <ol>
-                    <li>The first requirement for membership at Immanuel is faith in Christ as your Lord and Savior, which should be accompanied by baptism.</li>
+                    <li>The first requirement for membership at Immanuel is faith in Christ as your Lord and Savior, which should
+                        be accompanied by baptism.</li>
                     <li>The process to become a member follows these steps:</li>
                     <ol>
                         <li>You attend Immanuel regularly for a few months.</li>
@@ -963,8 +1002,10 @@
                         <li>You go through <i>Joining the Mission</i> materials.</li>
                         <li>After this you attend the next scheduled Mission Class.</li>
                         <li>Then you meet individually with an Elder.</li>
-                        <li>Your name is then submitted in writing to the current members at least one week before a membership meeting.</li>
-                        <li>At the next membership meeting, you are presented by the Elders to the church and a vote is taken on your membership.</li>
+                        <li>Your name is then submitted in writing to the current members at least one week before a membership
+                            meeting.</li>
+                        <li>At the next membership meeting, you are presented by the Elders to the church and a vote is taken
+                            on your membership.</li>
                     </ol>
                 </ol>
                 <md-button class="md-raised-primary" v-on:click="setPage('Why Membership? 02')">
@@ -977,14 +1018,22 @@
             <div v-if="page == 'What Do I Do As A Member?'">
                 <h1>What Do I Do As A Member?</h1>
                 <ol>
-                    <li>Sign and adhere to <u>the Church Covenant</u>.</li>
-                    <li>Regularly attend <u>worship services</u>.</li>
-                    <li>Be <u>growing</u> in your personal walk>.</li>
-                    <li>Support the church <u>financially</u>.</li>
-                    <li>Be involved in a <u>Small Group</u>.</li>
-                    <li>Be active in <u>ministry</u>.</li>
-                    <li>Attend <u>membership meeting</u>.</li>
-                    <li><u>Pray</u> for Immanuel.</li>
+                    <li>Sign and adhere to
+                        <u>the Church Covenant</u>.</li>
+                    <li>Regularly attend
+                        <u>worship services</u>.</li>
+                    <li>Be
+                        <u>growing</u> in your personal walk>.</li>
+                    <li>Support the church
+                        <u>financially</u>.</li>
+                    <li>Be involved in a
+                        <u>Small Group</u>.</li>
+                    <li>Be active in
+                        <u>ministry</u>.</li>
+                    <li>Attend
+                        <u>membership meeting</u>.</li>
+                    <li>
+                        <u>Pray</u> for Immanuel.</li>
                 </ol>
                 <md-button class="md-raised-primary" v-on:click="setPage('How Do I Become A Member?')">
                     Prev
@@ -995,16 +1044,31 @@
             </div>
             <div v-if="page == 'Our Church Covenant'">
                 <h1>Our Church Covenant</h1>
-                <p>As a member of Immanuel Baptist Church, I declare myself to be a follower of Jesus Christ and affirm that I cannot be such apart from a community of other Christ followers.  I recognize that community requires commitment and I therefore make my commitment official and public by willingly entering into this covenant with my fellow brothers and sisters in Christ at Immanuel Baptist Church:</p>
+                <p>As a member of Immanuel Baptist Church, I declare myself to be a follower of Jesus Christ and affirm that
+                    I cannot be such apart from a community of other Christ followers. I recognize that community requires
+                    commitment and I therefore make my commitment official and public by willingly entering into this covenant
+                    with my fellow brothers and sisters in Christ at Immanuel Baptist Church:</p>
                 <ul>
-                    <li>A Christian’s life must be distinct amidst a world of sin.  Therefore, I covenant to live a holy life of integrity and purity according to God’s standards (cf. 2Cor. 7:1, 1Thess. 4:7).</li>
-                    <li>The ultimate mission of the church is to spread the message of salvation through Jesus and expand the kingdom of God.  Therefore, I covenant to intentionally seek opportunities where I can share the gospel with those who do not currently believe (cf. Mt. 28:18-20).</li>
-                    <li>Love of God and love of neighbor go hand in hand.  Therefore, I covenant to practice religion that God our Father accepts as pure and faultless by exhibiting a concern for the poor and oppressed and championing the cause of social justice in whatever ways I can (cf. Mt. 22:39, James 1:27).</li>
-                    <li>Community requires openness.  Therefore, I covenant to foster relationships of authenticity and transparency by letting people in the community into my heart and life (cf. James 5:16).</li>
-                    <li>When sinful people are together they are bound to step on toes or rub each other the wrong way eventually.  Therefore, I covenant to not grow bitter or leave (cf. Eph. 4:31-32), but to patiently cultivate genuine love between members (cf. 1Jn. 4:7-12) and proactively work to preserve the unity of the body (cf. Eph. 4:2-3).</li>
-                    <li>Being a part of a body means that members are intimately interrelated.  Therefore, I covenant to consider how my words and deeds affect my fellow members and act accordingly (cf. Rom. 12:4-5, 14:1-23).</li>
-                    <li>Scripture grants oversight of the church to its Elders.  Therefore, I covenant to joyfully submit to their leadership (cf. Heb. 13:17).</li>
-                    <li>A Christian’s life must be distinct amidst a world of sin.  Therefore, I covenant to live a holy life of integrity and purity according to God’s standards (cf. 2Cor. 7:1, 1Thess. 4:7).</li>
+                    <li>A Christian’s life must be distinct amidst a world of sin. Therefore, I covenant to live a holy life
+                        of integrity and purity according to God’s standards (cf. 2Cor. 7:1, 1Thess. 4:7).</li>
+                    <li>The ultimate mission of the church is to spread the message of salvation through Jesus and expand the
+                        kingdom of God. Therefore, I covenant to intentionally seek opportunities where I can share the gospel
+                        with those who do not currently believe (cf. Mt. 28:18-20).</li>
+                    <li>Love of God and love of neighbor go hand in hand. Therefore, I covenant to practice religion that God
+                        our Father accepts as pure and faultless by exhibiting a concern for the poor and oppressed and championing
+                        the cause of social justice in whatever ways I can (cf. Mt. 22:39, James 1:27).</li>
+                    <li>Community requires openness. Therefore, I covenant to foster relationships of authenticity and transparency
+                        by letting people in the community into my heart and life (cf. James 5:16).</li>
+                    <li>When sinful people are together they are bound to step on toes or rub each other the wrong way eventually.
+                        Therefore, I covenant to not grow bitter or leave (cf. Eph. 4:31-32), but to patiently cultivate
+                        genuine love between members (cf. 1Jn. 4:7-12) and proactively work to preserve the unity of the
+                        body (cf. Eph. 4:2-3).</li>
+                    <li>Being a part of a body means that members are intimately interrelated. Therefore, I covenant to consider
+                        how my words and deeds affect my fellow members and act accordingly (cf. Rom. 12:4-5, 14:1-23).</li>
+                    <li>Scripture grants oversight of the church to its Elders. Therefore, I covenant to joyfully submit to their
+                        leadership (cf. Heb. 13:17).</li>
+                    <li>A Christian’s life must be distinct amidst a world of sin. Therefore, I covenant to live a holy life
+                        of integrity and purity according to God’s standards (cf. 2Cor. 7:1, 1Thess. 4:7).</li>
                     <li>In addition, I specifically covenant to:</li>
                     <ul>
                         <li>regularly attend Sunday worship services (cf. Acts 20:7, Heb. 10:25)</li>
@@ -1015,17 +1079,234 @@
                         <li>attend Membership Meetings</li>
                         <li>and pray consistently for the church and its members (cf. Col. 1:3)</li>
                     </ul>
-                    <li>Finally, I recognize that participating in such a church community requires accountability.  Therefore, I covenant to lovingly rebuke fellow members when necessary, accept rebuke when received, and unflinchingly extend forgiveness upon repentance (cf. Lk. 17:3-4).  I also covenant to submit to and uphold church discipline (Mt. 18:15-17, 1Cor. 5).
+                    <li>Finally, I recognize that participating in such a church community requires accountability. Therefore,
+                        I covenant to lovingly rebuke fellow members when necessary, accept rebuke when received, and unflinchingly
+                        extend forgiveness upon repentance (cf. Lk. 17:3-4). I also covenant to submit to and uphold church
+                        discipline (Mt. 18:15-17, 1Cor. 5).
                     </li>
                 </ul>
-                <md-button class="md-raised-primary" v-on:click="setPage('What do I do as a Member')">
+                <md-button class="md-raised-primary" v-on:click="setPage('What Do I Do As A Member?')">
                     Prev
                 </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s History?')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s History')">
                     Next
                 </md-button>
             </div>
+            <div v-if="page == 'Immanuel\'s History'">
+                <h1>Immanuel's History</h1>
+                <ol type="A">
+                    <li>The Dream</li>
+                    <ol>
+                        <li>Starting in the fall of <u>1991</u>...</li>
+                        <li>They prayed that:</li>
+                        <ol type="i">
+                            <li>God would instill in them a love and reverence for His <u>Word</u></li>
+                            <li>The Church would once again embrace the <u>cross</u> of Jesus and revel in the all-sufficiency of Christ's <u>atoning sacrifice</u></li>
+                            <li>God would saturate the Church with the spirit of <u>prayer</u></li>
+                        </ol>
+                        <li>On the first Sunday of September, <u>1994</u>, Immanuel Baptist Church had its first service in <u>Loyola Park</u>, Chicago</li>
+                    </ol>
+                    <li>The Early Days</li>
+                    <ol>
+                        <li>Immanuel Baptist Church first sought to minister to the <u>'poor and needy'</u> in the <u>Rogers Park</u>neighborhood</li>
+                        <li>Immanuel was forced to <u>re-direct</u> its ministry focus</li>
+                    </ol>
+                    <li>Other Locations</li>
+                    <ol>
+                        <li>Immanuel found a shelter in two local <u>theaters</u></li>
+                        <ol type="i">
+                            <li>First in the <u>Mary-Arrchie Theater</u></li>
+                            <li>Second in the <u>Strawdog Theater</u></li>
+                        </ol>
+                    </ol>
+                    <li>The Lincoln Park Years</li>
+                    <ol>
+                        <li>God provided a place in Lincoln Park - <u>Seminary Ave. Community Church</u></li>
+                        <li>We continued to reach out to <u>young adults</u> and <u>college students</u> from other neighborhoods of Chicago as well as from the <u>suburbs</u></li>
+                        <li>In <u>2001</u> our <u>founding pastor</u> left.</li>
+                        <li>We extended a call to <u>Nathan Carter</u> in <u>June</u> of 2004.</li>
+                    </ol>
+                    <li>It All Comes Together</li>
+                    <ol>
+                        <li>The Elders presented to the congregation a vision for <u>re-planting</u> the <u>church</u>. Why?</li>
+                        <ol type="i">
+                            <li>the <u>ethnic</u> and <u>economic</u> diversity</li>
+                            <li>the <u>university</u> setting</li>
+                            <li>the proximity to an <u>artist district</u></li>
+                            <li>and the lack of <u>churches</u></li>
+                        </ol>
+                        <li>First official service in the <u>UIC Area</u> on August 28, 2005</li>
+                        <li>We met at <u>Duncan YMCA Chernin Center for the Arts</u></li>
+                        <li>The we met at <u>Chicago Hope Academy</u></li>
+                        <li>The next phase lasted four years at 1417 W. Taylor St.</li>
+                        <li>Finally, in <u>August of 2011</u> we moved 2 blocks south to <i>The Meeting Place</i> on Roosevelt</li>
+                        <li>Immanuel now has a <u>neighborhood-specific</u> vision for reaching a particular place and its people:</li>
+                        <ol type="i">
+                            <li><u>poor</u> and <u>needy</u></li>
+                            <li><u>yuppies</u>, <u>students</u> and <u>artists</u></li>
+                        </ol>   
+                    </ol>
+                    <li>A Church Planting Church</li>
+                    <ol>
+                        <li>On <u>July 11</u>, 2010, <u>Chirst Redeemer Community Church</u> was birthed out of Immanuel</li>
+                        <li><u>Whatever we can do</u>!</li>
+                    </ol>
+                </ol>
+                <md-button class="md-raised-primary" v-on:click="setPage('Our Church Covenant')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Statement Of Faith')">Next</md-button>
+            </div>  
+            <div v-if="page == 'Statement Of Faith'">
+                <h1>Statment of Faith</h1>
+                <ul>
+                    <li><a href="https://youtu.be/AwdjD0aW9UE" target="_blank">Introduction</a></li>
+                    <li><a href="https://youtu.be/neHR-EDxxzw" target="_blank">Article 1 - The Scriptures</a></li>
+                    <li><a href="https://youtu.be/jBe_0uXWw9I" target="_blank">Article 2 - Of The True God</a></li>
+                    <li><a href="https://youtu.be/1tirZsoaM20" target="_blank">Article 3 - Of The Fall Of Man</a></li>
+                    <li><a href="https://youtu.be/qBYNl8Oyw2g" target="_blank">Article 4 - Of The Way Of Salvation</a></li>
+                    <li><a href="https://youtu.be/g5UpNeRD6VE" target="_blank">Article 5 - Of Justification</a></li>
+                    <li><a href="https://youtu.be/L9iHkZn4HPs" target="_blank">Article 6 - Of The Freeness Of Salvation</a></li>
+                    <li><a href="https://youtu.be/sVmb_xm9N8g" target="_blank">Article 7 - Of Grace In Regeneration</a></li>
+                    <li><a href="https://youtu.be/UrKHqSn5Zj4" target="_blank">Article 8 - Of Repentance And Faith</a></li>
+                    <li><a href="https://youtu.be/Jv-YPTI6tYc" target="_blank">Article 9 - Of God's Purpose Of Grace</a></li>
+                    <li><a href="https://youtu.be/290aIJf5kXo" target="_blank">Article 10 - Of Sanctification</a></li>
+                    <li><a href="https://youtu.be/gxjRO0_-lRE" target="_blank">Article 11 - Of The Perseverance Of The Saints</a></li>
+                    <li><a href="https://youtu.be/60SSBgQRjYM" target="_blank">Article 12 - Of The Harmony Of Law And Gospel</a></li>
+                    <li><a href="https://youtu.be/utXjPv0mx20" target="_blank">Article 13 - Of A Gospel Church</a></li>
+                    <li><a href="https://youtu.be/BD72UErsJqw" target="_blank">Article 14 - Of Baptism And The Lord's Supper</a></li>
+                    <li><a href="https://youtu.be/CMzO0cPBLS8" target="_blank">Article 15 - Of The Christian Sabbath</a></li>
+                    <li><a href="https://youtu.be/oWsDHYZoNW4" target="_blank">Article 16 - Of Civil Government</a></li>
+                    <li><a href="https://youtu.be/w8t4UMW1eOM" target="_blank">Article 17 - Of The Righteous And The Wicked</a></li>
+                    <li><a href="https://youtu.be/kfBYSLs2-EU" target="_blank">Article 18 - Of The World To Come</a></li>
+                    <li><a href="https://youtu.be/xZiYucQ-rfg" target="_blank">Article 19 - The Family</a></li>
+                </ul>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s History')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Mission')">Next</md-button>
+            </div>
+            <div v-if="page == 'Immanuel\'s Mission'">
+                <h1>Immanuel's Mission</h1>
+                <p>The <b>mission</b> of Immanuel Baptist Church is </p>
+                <p>to be a multiplying community </p>
+                <p>that enjoys and proclaims the Good News of Christ </p>
+                <p>in the great city of Chicago.</p>
+                
+                <md-button class="md-raised-primary" v-on:click="setPage('Statement Of Faith')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Vision')">Next</md-button>
+            </div>
+            <div v-if="page == 'Immanuel\'s Vision'">
+                <h1>Immanuel's Vision</h1>
+                <p>Our <b>vision</b> comes from TWO PICTURES in the Bible of God's people living in major global cities and then a METAPHOR.</p>
+                <ol>
+                    <li><u>The Church in Antioch</u> (Acts 11, 13)</li>
+                    <ul>
+                        <li>Antioch was the Chicago of the first century Roman world, just behind Rome and Alexandria in size and strategic influence.  It was a cosmopolitan city, densely populated while highly segregated.  Into this setting the good news about the Lord Jesus was boldly spoken and a great number of people believed and turned to the Lord.  The watching world had to come up with a brand new name for this phenomenon because for the first time ever people were crossing ethnic/social barriers to worship the same God – the disciples were called Christians first at Antioch.</li>
+                        <li>Just like the church in Antioch, we want Immanuel to be a community called together by the gospel, constantly seeing a great number of people brought to the Lord, and consistently encouraged to remain true to the Lord with all our hearts by a team of teachers.  We desire the evidence of the grace of God to be unmistakable among us, making people genuinely glad.  We expect multi-ethnicity and diversity.  As seen with the church in Antioch, we will also foster relationships of interdependence with other churches.  We seek to be a people open to the Holy Spirit and found regularly worshipping the Lord.  And, just as the Antioch church did, our dream is to constantly be sending people off to start new churches.  We know nothing will happen unless the Lord’s hand is with us, but we will fast and pray and take risks to be part of a movement of the gospel.</li>
+                    </ul>
+                    <li><u>The Israelites in Babylon</u> (Jeremiah 29)</li>
+                    <ul>
+                        <li>Babylon was another big and powerful city in ancient times.  As the seat of the Babylonian Empire it represented all that was against God.  It was in many ways a dark place, synonymous with sin, and full of idolatries.  The Babylonians, under Nebuchadnezzar, attacked the people of God in 597 B.C. and carried off many of them to live in exile there.  But God encouraged his people through the prophet Jeremiah not to form a ghetto hoping for a quick return to Jerusalem.  They were to recognize that God carried them there and had good plans for them.  He told them: <i>Build houses and settle down; plant gardens and eat what they produce.  Marry and have sons and daughters; find wives for your sons and give your daughters in marriage, so that they too may have sons and daughters.  Increase in number there; do not decrease.  Also, seek the peace and prosperity of the city….  Pray to the Lord for it, because if it prospers, you too will prosper</i>.</li>
+                        <li>Just like the exiles in Babylon, we want Immanuel to be a community that is distinct and separate from the sinful culture around us while at the same time concerned and involved.  We will be humble servants of the city in our various vocations, praying and working for its ultimate good.  We realize that a movement of the gospel here will take time and require longevity, so while embracing the opportunity to impact and export people coming through our city we will also push hard for more and more Christians to settle down in the city, get married, have kids, buy houses, and embrace a multi-generation vision for a movement.</li>
+                    </ul>
+                </ol>
+                <li>METAPHOR - <a href="http://www.immanuel-baptist.net/About/Vision%20Video%20Updated%202015%20With%20Audio.wmv" target="_blank">Sailors and Longshoremen</a></li>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Mission')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Values')">Next</md-button>
+            </div>
+            <div v-if="page == 'Immanuel\'s Values'">
+                <h1>Immanuel's Values</h1>
+                <p>We value...</p>
+                <ul>
+                    <li>…the <a href="https://www.biblegateway.com/quicksearch/?quicksearch=scripture&qs_version=ESV" target="_blank">BIBLE</a> as inerrant, authoritative, and fully sufficient for life and ministry.</li>
+                    <li>…the <a href="https://youtu.be/gmnSnNC8UJk" target="_blank">GOSPEL</a> as as the main thrust of the whole Bible.</li>
+                    <li>…<a href="https://youtu.be/IapqqQ45Q4w" target="_blank">JUSTIFICATION</a> by faith alone, through grace alone, on the basis of Chirst alone as central to the Gospel.</li>
+                    <li>…local <a href="http://www.thegospelcoalition.org/article/parachurch-ministry" target="_blank">CHURCHES</a> as the necessary entailment of the Gospel.</li>
+                    <li>…<a href="https://youtu.be/NQJDZdpUN5Y?t=4m48s" target="_blank">DIVERSITY</a> as the demonstration of the power of the Gospel.</li>
+                    <li>…expository, Christ-centered <a href="https://forthesakeofthename.wordpress.com/2015/08/10/is-preaching-passe/" target="_blank">PREACHING</a> as the backbone of every church.</li>
+                    <li>…<a href="http://immanuel-baptist.net/sermon/acts/pdf/060423_Acts_14_21_28.pdf" target="_blank">ELDERSHIP</a> as the method of leading individual churches.</li>
+                    <li>…personal <a href="https://vimeo.com/10644973" target="_blank">DISCIPLESHIP</a> as an integral part of the culture of a church.</li>
+                    <li>…<a href="https://youtu.be/d-hB7syUmTM" target="_blank">prayer</a> as the appropriate posture of a church.</li>
+                    <li>…<a href="http://download.redeemer.com/pdf/learn/resources/Why_Plant_Churches-Keller.pdf" target="_blank">CHURCH PLANTING</a> as the constant priority of all churches.</li>
+                    <li>…the <a href="https://youtu.be/qksdFX94vpQ" target="_blank">CITY</a> as an exciting and strategic place for church planting.</li>
+                    <li>…<a href="http://joshuaproject.net/resources/videos" target="_blank">GLOBAL MISSIONS</a> as the responsibility of every church, not to be ignored in the pursuit of local church planting.</li>
+                    <li>…the <a href="https://youtu.be/VeKgfUGtcI0" target="_blank">GLORY OF GOD</a> as the end goal of everything.</li>
+                </ul>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Vision')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Organizational Structure')">Next</md-button>
+            </div>
+            <div v-if="page == 'Immanuel\'s Organizational Structure'">
+                <h1>Immanuel's Organizational Structure</h1>
+                <h2>Elder-Led Congregationalism</h2>
+                <p>You might not think it’s the case, but how a church is structured and operates is a very important issue.  Many people think that the Bible doesn’t address the topic of church government, but we believe strongly that it does.  We hold firmly to a unique form of Elder led congregationalism.  This is a hybrid between a <i>congregational</i> model of church governance (final governing authority rests with the membership of the local congregation) and a <i>presbyterian</i> model (plural Elders govern their respective local churches; in a full-blown presbyterian system some or all of the Elders from a local church make up a presbytery or general assembly which governs several churches in a region and a denomination as a whole, but that’s not what we’re talking about).</p>
+                <p>Article IV of our church’s Bylaws explains this arrangement in further detail (found in Part 10 of this packet).  There are specific areas of government that are reserved for the membership like affirming Elders and Deacons, approving the budget, receiving new members, disciplining current members, and purchasing property.  In becoming a member you are given a say in these matters.  Giving the congregation this authority provides a nice check and balance to the leadership and also helps foster a sense of ownership among the members of the church.</p>
+                <p>However, Immanuel is not a pure democracy.  Anything else pertaining to the affairs of the church not specifically reserved in the Bylaws for the congregation belongs to the realm of the Elders.  Our Bylaws state, “the Elders shall be entrusted with the responsibility to superintend all areas of congregational life.”  Most decisions dealing with the church’s ministries, vision, direction, etc. are made by the Elders.  Practically speaking, what this means is that the leadership of Immanuel is entrusted to a small group of qualified, godly men.</p>
+                <p>The first thing to notice about that last sentence is that it says “men” and not “man.” This means that we are committed to leadership by a plurality of Elders, not just one pastor.  What’s called the ‘Single-Elder’ or ‘Single-Pastor’ model is a very popular model of church government today.  In this model the ultimate authority lies with ‘the senior pastor’.  That is <b>not</b> how Immanuel is structured.  We believe that Jesus is ‘the senior pastor’ (cf. Jn. 10:11ff; Col. 1:18; 1Pet. 5:4) and that the New Testament prescription is for a group or team of Elders to lead <i>together</i>, under Jesus’ authority.  Several texts demonstrate this (i.e. Acts 20:28; Tit. 1:5; 1Pet. 5:1-2), but the most convincing one is found in Acts 14:23 where the church-planting procedure of Paul and Barnabas is made explicit – “Paul and Barnabas appointed elders [plural] for them in each church [singular] and, with prayer and fasting, committed them to the Lord, in whom they had put their trust.”  The rest of the New Testament assumes that individual churches are led by a plurality of elders/overseers/pastors (shepherds) – all different terms for the same office.</p>
+                <p>Based upon texts like 1 Tim. 5:17, one or more of the Elders who are particularly gifted in preaching, teaching, and leading may be compensated by the church for their work.  In other words there may be some who are Elders as their ‘career’.  At Immanuel, this is pastor Nathan.  He is considered ‘first among equals’ on the Elder team and the church supports him and his family full-time.</p>
+                <p>The bottom line is that if you’re familiar with a type of church government where all the decisions are made from the top and come down from on high you might have to adjust to the way Immanuel works and the amount of authority delegated to the membership.  However, if you’re from a tradition where the congregation wields quite a bit of power it may be a change for you to learn to submit to the authority of the Elders and see them as your leaders (cf. Heb. 13:17).</p>
+                <p>The Deacons, following the prototype in Acts 6:1-6, are by definition servants.  They are qualified men and women who are committed to cheerfully and sacrificially serving the body in whatever way the Elders see fit to use them.  The role of Deacon is not a leadership role in the way that Elder is, but it is an important part of the church’s structure.  The task of the Deacons is to relieve the Elders of duties that might detract from their primary role as spiritual leaders.  The Elders must be able to give themselves fully to such things as shepherding, overseeing, teaching, counseling, and praying.  The Deacons also often play an advisory role to the Elders.</p>
+                <p>On the next page you will find a chart that’s meant to help picture the authority structures set up in the church and generally how things operate at Immanuel.</p>
+                <a href="immanuel_organization.png" target="_blank"><img src="immanuel_organization.png" alt=""></a>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Values')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('On Complementarianism')">Next</md-button>
+            </div>
+            <div v-if="page == 'On Complementarianism'">
+                <h1>Immanuel's Organizational Structure</h1>
+                <h2>On Complementarianism</h2>
+                <p>At Immanuel, we hold that men and women are not interchangeable.  We believe this is the obvious conclusion of Genesis 1:26-2:25.  Prior to the Fall there was a clear, God-ordained difference between men and women that allowed them to live together in a beautiful harmony.  Each was made in the image of God and therefore equal in value and worth, yet they were also made distinct from each other in role and function.</p>
+                <p>The introduction of sin into the world caused male-female relations to be messed up.  They either tend towards one extreme where men oppress women and/or women act like door-mats or the other extreme where men are weak and/or women attempt to usurp male authority.  We here at Immanuel believe in a theological position called <i>complementarianism</i>, which essentially means that men and women are equal in value but have distinct and complementary roles.</p>
+                <p>The other major position found among some churches today is called <i>egalitarianism</i>.  This view maintains that gender distinctions are the result of the Fall and verses like Gal. 3:28 state that Christ came to reverse such distinctions.  But we believe such verses do not have the respective roles of men and women in view, but rather the availability of salvation to all.  Such people who hold that men and women are indistinguishable before God may possibly be uneasy at Immanuel.</p>
+                <p>The complementarian position obviously has a great effect on how marriage is understood.  We believe that, according to passages like Ephesians 5:22-33, husbands should be the leaders in the home and wives should submit to them.  This is not an endorsement of sinful male domination or chauvinism.  Far from it!  It is rather a beautiful picture of how Christ relates to the church, his beloved bride.  Men must love their wives enough to lead them in a Christ-like manner, being willing to lay down their lives for them.  And wives must submit willingly and respectfully.  In such a complementary relationship, the full beauty of marriage as God designed it to be is realized.</p>
+                <p>However, such a conception of gender roles not only applies to the home, but also the church, the household of God (cf. 1Tim. 3:15).  Paul makes this application in 1 Tim. 2:11-15 when he appeals to the creation order to prohibit women from certain roles in church leadership.  Above, attention was drawn to the fact that the Eldership at Immanuel is composed of “men” and not a “man.”  Secondly, it also must be noted that Eldership is reserved for “men” and not “women.”  We affirm that Paul’s prohibition stating that women are not permitted “to teach or to have authority over men” is a prohibition against women in the Eldership.  Thus, our Bylaws reserve Eldership for qualified men.</p>
+                <p>Beyond this, however, the application of the complementarian position to how women can function in the church is somewhat of a gray issue.  Here is where Immanuel has decided to draw the lines: <i>women may not be Elders and women may not preach in Sunday worship services</i>.  Apart from these parameters let it clearly be said that women are urged to pursue all leadership and ministry positions anywhere else in the church in line with their gifts!  We need and desire strong, godly, wise, mature women.  Women are free and encouraged to be things like a Deacon, the Finance Team chair, a Worship Team member, a Sunday School teacher, and even a Small Group leader since teaching and leading a small group discussion does not carry the full weight of authoritative teaching like preaching on Sundays over the entire congregation does.</p>
+                <p>Immanuel holds firmly to its position on these matters.  If you do not personally believe in this understanding of the complementarian position that’s okay, provided that you are not actively teaching against this position or seeking to change our convictions and that you are comfortable with us teaching sexuality this way.  For a good explanation of the exegesis behind this position, see <a href="http://a.co/gxrymUO" target="_blank">God’s Good Design: What the Bible Really Says About Men and Women by Claire Smith</a>.  You also might want to watch this video from the 2014 Summer Retreat on “<a href="https://youtu.be/dcxy9ZaXPnM" target="_blank">Why Do Gender-Roles Matter?</a>”</p>
+                <p>You’ll also hear us talking a lot about getting men to step up to the plate and be leaders because we believe this is biblical and this is one of our culture’s (and the church’s) greatest problems.  We believe that if we want to really affect our city with the gospel we need men – men who can lead themselves, love and care for their wives, and be the pastor of their families.</p>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Organizational Structure')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('On Denominationalism')">Next</md-button>
+            </div>
+            <div v-if="page == 'On Denominationalism'">
+                <h1>Immanuel's Organizational Structure</h1>
+                <h2>On Denominationalism</h2>
+                <p>Many people will wonder what it means that Immanuel is a Baptist church.  Essentially, what it means to be a part of the historic Baptist tradition is:</p>
+                <ul>
+                    <li>To hold to a position that’s called <u>believer’s baptism</u> (a.k.a <i>credo-baptism</i>).  This means that the church doesn’t practice infant baptism (a.k.a. <i>paedo-baptism</i>) like other traditions do because it sees baptism in the New Testament as always occurring <i>after</i> someone has come to believe in Jesus.  The ordinance is understood to entail immersion in water and to be a symbolic and powerful picture of what has <i>already</i> happened in someone’s life when they believed the gospel – their sins were washed away and they were raised to new life with Christ.</li>
+                    <li>To hold to a position that’s called <u>local church autonomy</u>.  This means that local churches are not part of any ecclesiastical or governmental hierarchy or under any denominational control because they see in the New Testament a pattern of each individual congregation being self-governing.</li>
+                </ul>
+                <p>Some Baptist churches freely choose to join a loose association of other Baptist churches for accountability, support, and ultimately cooperation and greater effectiveness in mission.  The largest such network of Baptist churches in the world is the <a href="http://www.sbc.net/" target="_blank">Southern Baptist Convention</a> (SBC) of which Immanuel is a part.</p>
+                <p>Here’s how this works out for Immanuel:</p>
+                <ol>
+                    <li>We are a part of a local association of roughly 200 very diverse Baptist churches called the <a href="http://www.chicagobaptist.org/">Chicago Metro Baptist Association</a> (CMBA).  We cooperate together in the daunting task of reaching the 9.5 million people in the Chicago metro area.</li>
+                    <li>The CMBA is one of over 30 different local associations that make up the <a href="http://www.ibsa.org/">Illinois Baptist State Association</a> (IBSA) headquartered in Springfield, IL.  Each year Immanuel voluntarily sends money to IBSA through what’s called the Cooperative Program.  Some of that money supports state missions, some of it goes back to the local associations, and a large portion of it is sent on to the SBC.</li>
+                    <li>At the national level, Cooperative Program funds are primarily used to support:</li>
+                    <ol type="A">
+                        <li><a href="http://www.imb.org/">The International Mission Board</a> (IMB).  This is the largest missions organization in the world.  The beauty of it is that all the international missionaries are fully funded through Cooperative Program dollars.  So as a member of a SBC church someone can go overseas through IMB without raising support.</li>
+                        <li><a href="http://www.namb.net/">The North American Mission Board</a> (NAMB).  This organization sends missionaries all over the continent to share Christ and start churches.  We’ve also received financial support through NAMB in the past to fund a full-time collegiate minister.  And there are many other means of help available to us through NAMB.</li> 
+                        <li><a href="http://www.sbc.net/aboutus/entities/seminaries.asp">Six Southern Baptist Seminaries</a>.  These schools provide a top-notch theological education for a fraction of the price.  And if you’re a member of a SBC church, the already subsidized cost is further cut in half.  Again, we’ve sent people out from our church to go to one of these seminaries for cheap!</li>
+                    </ol>
+                </ol>
+                <md-button class="md-raised-primary" v-on:click="setPage('On Complementarianism')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Ministry Structure')">Next</md-button>
+            </div>
+            <div v-if="page == 'Immanuel\'s Ministry Structure'">
+                <h1>Immanuel's Ministry Structure</h1>
+                <p>The final question you may be asking is – <i>Where could I serve in Immanuel</i>?  First of all, start building intentional relationships with people in the church where you give and receive gospel counseling!  The opportunities for ministry are endless.  Then really the main way you participate in Immanuel is not <i>in</i> the church per se, but in the neighborhood.  So the best way to serve the church is to throw yourself into the mission by being vocal about the gospel in your vocation and your involvement in the neighborhood!  We’ve created a website (<a href="www.UICArea.com">www.UICArea.com</a>) that we hope will become an exhaustive resource for ways to get involved in our neighborhood with stuff that’s already going on.  Please check it out!</p>
+                <p>As an intentionally simple church we don’t want to take up all of your time with ‘church stuff’.  We want you to have time to pursue excellence in your job (while maintaining balance!).  We want you to have time to focus on your marriage and care for your kids (if your home life is out of whack nothing else matters!).  We want you to have time to have neighbors over for dinner (hospitality is crucial in advancing our mission!).  We want you to have time to pursue hobbies and interests that you can use missionally (get involved in local biking clubs, knitting groups, ultimate frisbee leagues, Spanish magic realism reading clubs, www.MeetUp.com groups, etc…!).</p>
+                <p>Towards that end we have an intentionally ‘bare bones’ ministry structure.  We’ve tried to cut out everything superfluous.  With what remains, however, we expect your participation and based upon what your spiritual gifts are (cf. Rom. 12; 1Cor. 12) we can use your help.</p>
+                <p>Immanuel is an autonomous church and has freedom from outside control, but we also appreciate being a part of something bigger than ourselves and not just being a maverick.  While we would distance ourselves from some of the stereotypes associated with Southern Baptists, we are in general agreement with the <a href="http://www.sbc.net/bfm2000/bfm2000.asp">2000 Baptist Faith & Message</a> and the historic Baptist confessions (see <a href="http://founders.org/">Founders Ministries</a>).  And we see much benefit in partnering and pooling resources with other churches in order to do international and North American missions.</p>
+                <md-button class="md-raised-primary" v-on:click="setPage('On Denominationalism')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Ministry Opportunities')">Next</md-button>
+            </div>
 
+            <div v-if="page == 'Church In The City'">
+                <h1>Church In The City</h1>
+                <p>We love the city and we love our neighborhood!  We want you to too!  We believe God has called us on a distinctly urban mission.  And we believe this is done best by being a <i>community</i> church as opposed to a <i>commuter</i> church.  Let’s explore more of the rationale behind this and what it looks like… </p>
+                <h2>The Theology</h2>
+                <p>The Bible begins in a garden, but ends in a city!  Genesis 1:28 records the cultural mandate given to our first parents – “Be fruitful and increase in number; fill the earth and subdue it.  Rule over the fish of the sea and the birds of the air and over every living creature that moves on the ground.”  Adam and Eve were to continue God’s work of forming and filling the world as his representatives/images on earth.  This meant an increasing population and a developing civilization.  In other words – CITIES!</p>
+                <p>Contrary to what some have said, cities are not a result of sin.  They are part of God’s intention for humanity.  It’s just that sin now corrupts cities.   So instead of being a place of human cooperation and harmony, they become places of segregation and division.  Instead of being a seedbed of cultural creativity that reflects God’s beauty, they become production centers of art, science, technology, and culture that demean and debauch.  Instead of being places where God’s temple is at the center and God is collectively worshipped (i.e. Jerusalem), they become centers of idol worship (especially the god of Money) and pride with modern-day ziggurats downtown (i.e. Babel).  Sin has corrupted cities.</p>
+                <p>But Christians should not abandon the cities because God still sees them as part of his plan.  The book of Hebrews says that Abraham was “looking forward to the city with foundations, whose architect and builder is God” (11:10), and that God “has prepared a city” (Heb. 11:16) for those with Abraham’s faith.  Revelation 21-22 describes that city.  It says that the New Creation (the consummation of the kingdom which Jesus inaugurated in his death, burial, and resurrection) will be like the Garden of Eden (cf. Rev. 22:2).  But it will be the fulfillment of the original purposes of Eden; it will be a city – a fully populated and perfected civilization!</p>
+                <p>Until then, the church is to work to be a ‘city within the city’, the City of God amidst the City of Man (à la St. Augustine’s classic, The City of God).  We are a subversive community that witnesses to the cosmic aspect of the gospel and prefigures the consummation of the kingdom that is coming when Jesus returns.  Jeremiah’s letter to the exiles from Jerusalem in the pagan city of Babylon gives us this mandate –</p>
+                <blockquote>Build houses and settle down; plant gardens and eat what 	they produce.  Marry and have sons and daughters; find 	wives for your sons and give your daughters in marriage, so 	that they too may have sons and daughters.  Increase in 	number there; do not decrease.  Also, <u>seek the peace</u> and	<u>prosperity of the city</u> to which I have carried you into exile.  	Pray to the Lord for it, because if it prospers, you too will prosper.” (Jer. 29:5-7)</blockquote>
+                <p>Christians should be a presence in the cities, working for their good.</p>
+                <p>What’s more, cities provide the most strategic places for proclaiming the gospel. We see this clearly in the book of Acts.  The most momentous yet often missed advancement of the gospel in the book of Acts was when some Christians who had been scattered because of the persecution resulting from Stephen’s death “went to Antioch and began to speak to Greeks also, telling them the good news about the Lord Jesus” (Acts 11:20).</p>
+                
+            </div>
         </div>
 
 
