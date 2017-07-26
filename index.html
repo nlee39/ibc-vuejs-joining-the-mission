@@ -43,7 +43,7 @@
                             <md-menu-item v-on:click="setPage('The Mission')">The Mission</md-menu-item>
                             <md-menu-item v-on:click="setPage('Get Vocal')">Get Vocal</md-menu-item>
                             <md-menu-item v-on:click="setPage('Get Vocational 01')">Get Vocational</md-menu-item>
-                            <md-menu-item v-on:click="setPage('Get Involved 01')">Get Involved</md-menu-item>
+                            <md-menu-item v-on:click="setPage('Get Involved')">Get Involved</md-menu-item>
                         </md-menu-content>
                     </md-menu>
                 </md-list-item>
@@ -100,13 +100,9 @@
                         <md-ink-ripple />
                         </md-button>
                         <md-menu-content>
-                            <md-menu-item v-on:click="setPage('Chicago')">Chicago</md-menu-item>
                             <md-menu-item v-on:click="setPage('Chicago History')">Chicago History</md-menu-item>
                             <md-menu-item v-on:click="setPage('Chicago Statistics')">Chicago Statistics</md-menu-item>
                             <md-menu-item v-on:click="setPage('Chicago Neighborhoods')">Chicago Neighborhoods</md-menu-item>
-                            <md-menu-item v-on:click="setPage('The Method')">The Method</md-menu-item>
-                            <md-menu-item v-on:click="setPage('The City And Immanuel')">The City And Immanuel</md-menu-item>
-                            <md-menu-item v-on:click="setPage('Chicago')">Chicago</md-menu-item>
                         </md-menu-content>
                     </md-menu>
                 </md-list-item>
@@ -220,6 +216,7 @@
             </div>
             <div v-if="page == 'The Individual Angle 02'">
                 <h1>The Individual Angle</h1>
+                <h2>An Illustration</h2>
 
                 <p>The illustration on below helps in understanding the individual aspect of the gospel. It’s called ‘The Gospel
                     Trampoline’. We encourage you to spend time bouncing on it. Actually, spend the rest of your life going
@@ -415,13 +412,13 @@
                 <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 03')">
                     Prev
                 </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 01')">
+                <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle')">
                     Next
                 </md-button>
             </div>
 
             <!-- The Cosmic Angle -->
-            <div v-if="page == 'The Cosmic Angle 01'">
+            <div v-if="page == 'The Cosmic Angle'">
                 <h1>The Cosmic Angle</h1>
                 <p>Another way to understand the goodness of the good news after you’ve seen it from the individual angle is
                     to look at what it means for the whole world.
@@ -447,15 +444,6 @@
                     put the world right and put us in it to live with perfect interpersonal, societal, ecological, and spiritual
                     harmony.
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 04')">
-                    Prev
-                </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 02')">
-                    Next
-                </md-button>
-            </div>
-            <div v-if="page == 'The Cosmic Angle 02'">
-                <h1>The Cosmic Angle</h1>
                 <p>One of the ways the Bible talks about this is by referring to the good news of the kingdom of God. Jesus
                     began his earthly ministry by saying, “The time has come… The kingdom of God is near. Repent and believe
                     the good news” (Mk. 1:15). Toward the end of his earthly ministry Jesus said that “this gospel of the
@@ -472,8 +460,8 @@
                     Mt. 19:28, Acts 3:21, and especially Col. 1:20.
                 </p>
                 <p>Perhaps the diagram below will be of some help in getting the ‘big picture’.</p>
-                <img src="cosmic_angle_timeline.png" alt="">
-                <md-button class="md-raised-primary" v-on:click="setPage('The Cosmic Angle 01')">
+                <a href="cosmic_angle_timeline.png" target="_blank"><img src="cosmic_angle_timeline.png" alt=""></a> 
+                <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 04')">
                     Prev
                 </md-button>
                 <md-button class="md-raised-primary" v-on:click="setPage('The God Angle')">
@@ -607,7 +595,7 @@
                 </md-button>
             </div>
             <div v-if="page == 'Get Vocational 01'">
-                <h1>Get a Vocation</h1>
+                <h1>Get Vocational</h1>
                 <p><i>So what are you saying?  Do I have to become a pastor or a missionary?</i> A missionary? YES! But you
                     don’t have to go overseas… more on this later. A full-time pastor? NO! Nor do you have to work for the
                     church or a Christian school or a Christian company or a law firm that only takes freedom of religion
@@ -624,15 +612,7 @@
                     need (see Eph. 4:28) or to support those taking the gospel to unreached places (see Rom. 15:24), though
                     it is all that. But you’re also supposed to enjoy it!
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocal')">
-                    Prev
-                </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 02')">
-                    Next
-                </md-button>
-            </div>
-            <div v-if="page == 'Get Vocational 02'">
-                <h1>Get Vocational</h1>
+
                 <p>God created this world and put humans in it to play a part in the shaping and running of society (see Gen.
                     1:28). As a result of the first humans’ sin, this world is now fallen and so societies are dysfunctional
                     and corrupt. But Jesus died, was buried, and was raised to life to inaugurate a New Creation. He has
@@ -657,15 +637,7 @@
                     mission.” They don’t understand that being a computer programmer or a public school teacher or a dentist
                     or an engineer or a secretary or an actor is a vocation in the religious sense of the word.
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 01')">
-                    Prev
-                </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 03')">
-                    Next
-                </md-button>
-            </div>
-            <div v-if="page == 'Get Vocational 03'">
-                <h1>Get Vocational</h1>
+  
                 <p>It’s said that Martin Luther was once approached by a man who had just been converted and was eager to serve
                     the Lord. The man asked Luther what he should do (i.e. become a pastor or evangelist?). Luther replied,
                     “What is your work now?” “I’m a shoemaker,” the man said. To the cobbler’s surprise Luther said simply,
@@ -677,16 +649,16 @@
                     as being a preacher. Two great books to read on this would be Gene Edward Veith’s <a href="http://amzn.com/1433524473"
                         target="_blank">God at Work: Your Christian Vocation in All of Life</a> and Tim Keller’s <a href="http://amzn.com/1594632820"
                         target="_blank">Every Good Endeavor: Connecting Your Work to God’s Work</a>. You can also check out www.faithandwork.org
-                    or scan the archive of ‘Vocation Vignettes’ on <a href="www.immanuelblog.wordpress.com" target="_blank">www.immanuelblog.wordpress.com</a>.
+                    or scan the archive of ‘Vocation Vignettes’ on <a href="http://www.immanuelblog.wordpress.com" target="_blank">www.immanuelblog.wordpress.com</a>.
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 02')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocal')">
                     Prev
                 </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 04')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 02')">
                     Next
                 </md-button>
             </div>
-            <div v-if="page == 'Get Vocational 04'">
+            <div v-if="page == 'Get Vocational 02'">
                 <h1>Get Vocational</h1>
                 <h2>Relationships</h2>
                 <p>Now, here’s something that may throw you for a loop. It may not even be on some of your radar screens. But
@@ -712,14 +684,14 @@
                     are the main avenues for living out our mission to glorify God by spreading the good news of what he’s
                     done in Jesus.
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 03')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 01')">
                     Prev
                 </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Involved 01')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Get Involved')">
                     Next
                 </md-button>
             </div>
-            <div v-if="page == 'Get Involved 01'">
+            <div v-if="page == 'Get Involved'">
                 <h1>Get Involved</h1>
                 <p>Another thing to ask God is <i>where</i> he’s calling you to be vocal and have a vocation. Wherever he calls
                     you to live and work, he’s also calling you to be a missionary, whether that’s the bush in Africa or
@@ -739,15 +711,7 @@
                     that means at least one more thing: you get
                     <u>involved</u>.
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 04')">
-                    Prev
-                </md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Involved 02')">
-                    Next
-                </md-button>
-            </div>
-            <div v-if="page == 'Get Involved 02'">
-                <h1>Get Involved</h1>
+
                 <p>Imagine that you were dropped by parachute into a jungle in Africa as a missionary. What would you do? First,
                     you would go about learning the language, the culture, the customs, the history of the locals. In the
                     process you’d find ways to engage the culture and begin building relationships with people who lived
@@ -777,7 +741,7 @@
                 <p>As some missiologists have said, Christians everywhere are supposed to “seep into the cracks and crevices
                     of a society” in order to share the gospel with those who haven’t yet heard it.
                 </p>
-                <md-button class="md-raised-primary" v-on:click="setPage('Get Involved 01')">
+                <md-button class="md-raised-primary" v-on:click="setPage('Get Vocational 02')">
                     Prev
                 </md-button>
                 <md-button class="md-raised-primary" v-on:click="setPage('Joining The Mission')">
@@ -1222,7 +1186,7 @@
                     <li>…expository, Christ-centered <a href="https://forthesakeofthename.wordpress.com/2015/08/10/is-preaching-passe/" target="_blank">PREACHING</a> as the backbone of every church.</li>
                     <li>…<a href="http://immanuel-baptist.net/sermon/acts/pdf/060423_Acts_14_21_28.pdf" target="_blank">ELDERSHIP</a> as the method of leading individual churches.</li>
                     <li>…personal <a href="https://vimeo.com/10644973" target="_blank">DISCIPLESHIP</a> as an integral part of the culture of a church.</li>
-                    <li>…<a href="https://youtu.be/d-hB7syUmTM" target="_blank">prayer</a> as the appropriate posture of a church.</li>
+                    <li>…<a href="https://youtu.be/d-hB7syUmTM" target="_blank">PRAYER</a> as the appropriate posture of a church.</li>
                     <li>…<a href="http://download.redeemer.com/pdf/learn/resources/Why_Plant_Churches-Keller.pdf" target="_blank">CHURCH PLANTING</a> as the constant priority of all churches.</li>
                     <li>…the <a href="https://youtu.be/qksdFX94vpQ" target="_blank">CITY</a> as an exciting and strategic place for church planting.</li>
                     <li>…<a href="http://joshuaproject.net/resources/videos" target="_blank">GLOBAL MISSIONS</a> as the responsibility of every church, not to be ignored in the pursuit of local church planting.</li>
@@ -1271,13 +1235,13 @@
                 <p>Some Baptist churches freely choose to join a loose association of other Baptist churches for accountability, support, and ultimately cooperation and greater effectiveness in mission.  The largest such network of Baptist churches in the world is the <a href="http://www.sbc.net/" target="_blank">Southern Baptist Convention</a> (SBC) of which Immanuel is a part.</p>
                 <p>Here’s how this works out for Immanuel:</p>
                 <ol>
-                    <li>We are a part of a local association of roughly 200 very diverse Baptist churches called the <a href="http://www.chicagobaptist.org/">Chicago Metro Baptist Association</a> (CMBA).  We cooperate together in the daunting task of reaching the 9.5 million people in the Chicago metro area.</li>
-                    <li>The CMBA is one of over 30 different local associations that make up the <a href="http://www.ibsa.org/">Illinois Baptist State Association</a> (IBSA) headquartered in Springfield, IL.  Each year Immanuel voluntarily sends money to IBSA through what’s called the Cooperative Program.  Some of that money supports state missions, some of it goes back to the local associations, and a large portion of it is sent on to the SBC.</li>
+                    <li>We are a part of a local association of roughly 200 very diverse Baptist churches called the <a href="http://www.chicagobaptist.org/" target="_blank">Chicago Metro Baptist Association</a> (CMBA).  We cooperate together in the daunting task of reaching the 9.5 million people in the Chicago metro area.</li>
+                    <li>The CMBA is one of over 30 different local associations that make up the <a href="http://www.ibsa.org/" target="_blank">Illinois Baptist State Association</a> (IBSA) headquartered in Springfield, IL.  Each year Immanuel voluntarily sends money to IBSA through what’s called the Cooperative Program.  Some of that money supports state missions, some of it goes back to the local associations, and a large portion of it is sent on to the SBC.</li>
                     <li>At the national level, Cooperative Program funds are primarily used to support:</li>
                     <ol type="A">
-                        <li><a href="http://www.imb.org/">The International Mission Board</a> (IMB).  This is the largest missions organization in the world.  The beauty of it is that all the international missionaries are fully funded through Cooperative Program dollars.  So as a member of a SBC church someone can go overseas through IMB without raising support.</li>
-                        <li><a href="http://www.namb.net/">The North American Mission Board</a> (NAMB).  This organization sends missionaries all over the continent to share Christ and start churches.  We’ve also received financial support through NAMB in the past to fund a full-time collegiate minister.  And there are many other means of help available to us through NAMB.</li> 
-                        <li><a href="http://www.sbc.net/aboutus/entities/seminaries.asp">Six Southern Baptist Seminaries</a>.  These schools provide a top-notch theological education for a fraction of the price.  And if you’re a member of a SBC church, the already subsidized cost is further cut in half.  Again, we’ve sent people out from our church to go to one of these seminaries for cheap!</li>
+                        <li><a href="http://www.imb.org/" target="_blank">The International Mission Board</a> (IMB).  This is the largest missions organization in the world.  The beauty of it is that all the international missionaries are fully funded through Cooperative Program dollars.  So as a member of a SBC church someone can go overseas through IMB without raising support.</li>
+                        <li><a href="http://www.namb.net/" target="_blank">The North American Mission Board</a> (NAMB).  This organization sends missionaries all over the continent to share Christ and start churches.  We’ve also received financial support through NAMB in the past to fund a full-time collegiate minister.  And there are many other means of help available to us through NAMB.</li> 
+                        <li><a href="http://www.sbc.net/aboutus/entities/seminaries.asp" target="_blank">Six Southern Baptist Seminaries</a>.  These schools provide a top-notch theological education for a fraction of the price.  And if you’re a member of a SBC church, the already subsidized cost is further cut in half.  Again, we’ve sent people out from our church to go to one of these seminaries for cheap!</li>
                     </ol>
                 </ol>
                 <md-button class="md-raised-primary" v-on:click="setPage('On Complementarianism')">Prev</md-button>
@@ -1285,10 +1249,10 @@
             </div>
             <div v-if="page == 'Immanuel\'s Ministry Structure'">
                 <h1>Immanuel's Ministry Structure</h1>
-                <p>The final question you may be asking is – <i>Where could I serve in Immanuel</i>?  First of all, start building intentional relationships with people in the church where you give and receive gospel counseling!  The opportunities for ministry are endless.  Then really the main way you participate in Immanuel is not <i>in</i> the church per se, but in the neighborhood.  So the best way to serve the church is to throw yourself into the mission by being vocal about the gospel in your vocation and your involvement in the neighborhood!  We’ve created a website (<a href="www.UICArea.com">www.UICArea.com</a>) that we hope will become an exhaustive resource for ways to get involved in our neighborhood with stuff that’s already going on.  Please check it out!</p>
+                <p>The final question you may be asking is – <i>Where could I serve in Immanuel</i>?  First of all, start building intentional relationships with people in the church where you give and receive gospel counseling!  The opportunities for ministry are endless.  Then really the main way you participate in Immanuel is not <i>in</i> the church per se, but in the neighborhood.  So the best way to serve the church is to throw yourself into the mission by being vocal about the gospel in your vocation and your involvement in the neighborhood!  We’ve created a website (<a href="http://www.UICArea.com" target="_blank">www.UICArea.com</a>) that we hope will become an exhaustive resource for ways to get involved in our neighborhood with stuff that’s already going on.  Please check it out!</p>
                 <p>As an intentionally simple church we don’t want to take up all of your time with ‘church stuff’.  We want you to have time to pursue excellence in your job (while maintaining balance!).  We want you to have time to focus on your marriage and care for your kids (if your home life is out of whack nothing else matters!).  We want you to have time to have neighbors over for dinner (hospitality is crucial in advancing our mission!).  We want you to have time to pursue hobbies and interests that you can use missionally (get involved in local biking clubs, knitting groups, ultimate frisbee leagues, Spanish magic realism reading clubs, www.MeetUp.com groups, etc…!).</p>
                 <p>Towards that end we have an intentionally ‘bare bones’ ministry structure.  We’ve tried to cut out everything superfluous.  With what remains, however, we expect your participation and based upon what your spiritual gifts are (cf. Rom. 12; 1Cor. 12) we can use your help.</p>
-                <p>Immanuel is an autonomous church and has freedom from outside control, but we also appreciate being a part of something bigger than ourselves and not just being a maverick.  While we would distance ourselves from some of the stereotypes associated with Southern Baptists, we are in general agreement with the <a href="http://www.sbc.net/bfm2000/bfm2000.asp">2000 Baptist Faith & Message</a> and the historic Baptist confessions (see <a href="http://founders.org/">Founders Ministries</a>).  And we see much benefit in partnering and pooling resources with other churches in order to do international and North American missions.</p>
+                <p>Immanuel is an autonomous church and has freedom from outside control, but we also appreciate being a part of something bigger than ourselves and not just being a maverick.  While we would distance ourselves from some of the stereotypes associated with Southern Baptists, we are in general agreement with the <a href="http://www.sbc.net/bfm2000/bfm2000.asp" target="_blank">2000 Baptist Faith & Message</a> and the historic Baptist confessions (see <a href="http://founders.org/" target="_blank">Founders Ministries</a>).  And we see much benefit in partnering and pooling resources with other churches in order to do international and North American missions.</p>
                 <md-button class="md-raised-primary" v-on:click="setPage('On Denominationalism')">Prev</md-button>
                 <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Ministry Opportunities')">Next</md-button>
             </div>
@@ -1457,7 +1421,7 @@
                 <h1>Church In The City</h1>
                 <h2>The Need</h2>
                 <p>As opposed to ‘inner-city’, which traditionally connotes economic depression and exclusively ethnic minorities, we use the terms ‘center-city’ or ‘city-center’ to describe those neighborhoods (generally close to the downtowns) that are being revitalized and are increasingly multi-ethnic.  They are full of new residences for professionals and close to the economic and cultural institutions of the city, yet also include or are directly adjacent to pockets of poverty and immigrant communities.  They represent a ‘salad bowl’ (as opposed to a ‘melting pot’) of cultures and are home in large part to the creative class, the corporate leaders, the intelligentsia, the students, the poor, the immigrants, and the gay community.  <i>City-center neighborhoods are the single most strategic and needy places for church planting!</i></p>
-                <p>The evangelical church did a fairly good job of adapting to suburbanization.  There are many vital and growing churches on the fringes of American cities.  But it hasn’t done a good job of reaching the cities, especially in light of the new trend of re-urbanization.  <a href="http://www.redeemercitytocity.com/">Redeemer City to City</a> has done more than anyone else to mobilize Christians for urban church planting .  They put the situation this way:</p>
+                <p>The evangelical church did a fairly good job of adapting to suburbanization.  There are many vital and growing churches on the fringes of American cities.  But it hasn’t done a good job of reaching the cities, especially in light of the new trend of re-urbanization.  <a href="http://www.redeemercitytocity.com/" target="_blank">Redeemer City to City</a> has done more than anyone else to mobilize Christians for urban church planting .  They put the situation this way:</p>
                 <blockquote>“There is a lot of bemoaning the fact that, while there are millions of born-again Christians, they seem to be having no impact on the culture.  The reasons given are usually complex and unconvincing.  Nobody notices that Evangelicals are totally non-urban.  Homosexuals, while only 2% of the population, are nonetheless highly influential.  Why?  They live almost exclusively in the largest urban areas, where they work in places that control social discourse.  But evangelicals, who are 15%-20% or more of the population, have fled the cities.  This is a recipe for complete cultural irrelevance.”</blockquote>
                 <p>Of course, there need to be vocal Christians and missional churches wherever there are people.  But what is needed now more than ever is a strategic focus on the city-centers of the world.</p>
                 <md-button class="md-raised-primary" v-on:click="setPage('The History')">Prev</md-button>
@@ -1490,7 +1454,113 @@
                 <p>Immanuel is distinctly a city-center church.  We love Chicago as a whole and our neighborhood – the UIC Area – in particular.  And we want to see a movement of the gospel take root here and grow throughout the city… and beyond.</p>
         
                 <md-button class="md-raised-primary" v-on:click="setPage('The Method')">Prev</md-button>
-                <md-button class="md-raised-primary" v-on:click="setPage('Chicago')">Next</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Chicago History')">Next</md-button>
+            </div>
+            <div v-if="page == 'Chicago History'">
+                <h1>Chicago</h1>
+                <p>As a missionary to Chicago, we want you to get to know the city.  Chicago’s history perfectly illustrates the history of the American city:</p>
+                <h2>Chicago History</h2>
+                <ul>
+                    <li><u>Urbanization</u></li>
+                    <ul>
+                        <li>Chicago incorporated in 1833 and grew rapidly through the 1800s due in large part to its meatpacking, manufacturing, and steel industries combined with its position for trade on Lake Michigan and its status as a railroad hub.  At the time of the Great Chicago Fire in 1871 the population was 300,000.  By the time of the famous World’s Fair held in Chicago in 1893 the population was over 1 million.  By the year 1900 Chicago was the fifth largest city in the world!</li>
+                    </ul>
+                    <li><u>Suburbanization</u></li>
+                    <ul>
+                        <li>Chicago’s population peaked at 3,620,962 in 1950 and then began to drastically decline, losing nearly 1 million people to the burbs.  Highways like I-55 (Stevenson), I-290 (Eisenhower), I-90/94S (Dan Ryan), I-90/94 N (Kennedy) cut out major swaths of the city and destroyed communities.  Race riots engulfed much of the south and west sides, leaving behind abandoned lots that remain to this day.</li>
+                    </ul>
+                    <li><u>Re-urbanization</u></li>
+                    <ul>
+                        <li>In 1990, Chicago’s population hit its low-point before the present rebound.  Since then there has been an explosion of growth and new developments.  Lofts, condos, and townhomes are popping up everywhere.  2004 marked the opening of the much anticipated and acclaimed Millennium Park, which is representative of the center-city renewal taking place.</li>
+                    </ul>
+                    <p>For some good ‘Chicago’ reading, pick up Mike Royko’s, Boss, which tells the story of the first Mayor Daley and ‘machine’ politics; Upton Sinclair’s The Jungle is a classic; Erik Larson’s The Devil in the White City will give you a thrill and insight into the 1893 World’s Fair; also we recommend checking out the American Experience DVDs entitled City of the Century from the local library and watching them.  And get your hands on any of the Geoffrey Baer videos.</p>
+                </ul>
+                <md-button class="md-raised-primary" v-on:click="setPage('The City And Immanuel')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Chicago Statistics')">Next</md-button>
+            </div>
+            <div v-if="page == 'Chicago Statistics'">
+                <h1>Chicago</h1>
+                <h2>Chicago Statistics</h2>
+                <p>Chicago is like the Antioch of today.  It’s the third largest city in the United States behind New York and Los Angeles with nearly 3 million people in its city limits and 9.5 million in its metro area (SMSA).  Chicago is one of only 10 alpha class cities in the world (GaWC), a designation that indicates global influence and impact.  In 2010 Foreign Policy magazine ranked it as the 6th most influential city in the world.  It’s the second largest tourist destination in the country.  It has one of the world’s busiest airports (O’Hare).  12 Fortune 500 companies are headquartered in the city.  The Chicago Mercantile Exchange and Board of Trade is the world’s largest global derivatives exchange.  The University of Chicago has produced more Nobel Prize winners than any other university (81).  And through Chicago’s own WGN on cable people from around the country can watch Chicago’s local news every night.</p>
+                <p>Chicago is roughly 36% Black, 31% White, 26% Hispanic, and 5% Asian.  30 different ethnic groups have populations of at least 25,000.  The city’s history includes major contributions from Irish, Italian, and German immigrants.  Chicago still has more Poles than any other city in the world except Warsaw, Poland.    It boasts large numbers of Swedes, Bulgarians, Lithuanians, Serbs, Romanians, Czechs, Ukrainians, Assyrians, Greeks, Puerto Ricans, and Mexicans.  Along Devon Avenue on the north-side is one of the nation’s largest concentrations of South Asians, especially Indians and Pakistanis.  And on the south-side around Cermak and Wentworth there is a large Chinatown.  The nations are flocking to Chicago for education and economic opportunities.</p>
+                <p>Chicago is fascinating in its history and mind-boggling in its size, influence, and diversity.  But its most staggering statistic is its spiritual need.  Chicago often gets overlooked in this area because people see it as a tame, Midwestern city that’s home to several evangelical schools, organizations, publishing houses, and megachurches.  However, a vast majority of these ‘bright spots’ are out in the suburbs.  And an in-depth research project conducted in 2006 showed that “for the Chicago area to reach a 1 church for every 1000 ratio (not quite the national average [of 1:909]), without eliminating any current churches a total of 3726 new churches would need to be planted in the right areas of Chicagoland” (emphasis added).  The need is great in the region, but especially in the city-center neighborhoods where people are least likely to believe in Jesus and attend church.</p>
+                <p>Daniel Burnham, famous for his role in making Chicago an architectural pioneer and for planning the layout of the city in the early 1900s, once declared, “Make no little plans.”  The city’s motto inscribed on its seal is URBS IN HORTO, or “City in a Garden.”  Our hopes and dreams for Chicago are big – to see a movement of the gospel sweep across it to make it a place more like that garden-like city Jesus is coming to establish one day – the New Jerusalem.</p>
+                <img src="chicago_city_logo.png" alt="">
+                <md-button class="md-raised-primary" v-on:click="setPage('Chicago History')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Chicago Neighborhoods')">Next</md-button>
+            </div>
+            <div v-if="page == 'Chicago Neighborhoods'">
+                <h1>Appendum</h1>
+                <h2>Chicago Neighborhoods</h2>
+                <h3><u>The UIC Area</u></h3>
+                <p>Chicago is a massive city, but it’s really just a collection of small towns.  There are officially 77 Community Areas that make up the city and around 183 distinct neighborhoods.   If you’re going to understand Chicago, you’ve got to understand its neighborhoods, which is another reason why a hyper-local approach to ministry is so crucial.</p>
+                <p>Immanuel’s neighborhood is called the UIC Area.  It is a perfect example of a center-city neighborhood.  It takes up parts of the Near West and Lower West Sides of Chicago just south and west of the Loop.  The rough boundaries are I-290 (Eisenhower) on the north; Canal on the east; Cermak on the south; and Western on the west.  It contains several important components:</p>
+                <ul>
+                    <li><u>UIC</u></li>
+                    <ul>
+                        <li>The hub of the UIC Area is Chicagoland’s largest university – The University of Illinois at Chicago (UIC).  UIC enrolls 25,000 students – 45.6% Caucasian; 20.8% Asian; 12.7% Hispanic; 8.6% African American; 7.6% foreign.  1 out of every 10 college graduates in Chicago came through UIC.  It has an east and a west campus.  The west campus is home to the nation’s largest medical school.  The east campus was formed in the 1960s amidst much protest because it uprooted much of an established Italian neighborhood.  Jane Addam’s Hull House is still standing on the eastern edge of the campus as a monument to the first American woman to be awarded a Nobel Peace Prize.  UIC has been traditionally a largely commuter school, but is becoming more and more a premier residential, research institution (due to the fact that cities are becoming ‘hip’ places to be).</li>
+                    </ul>
+                    <li><u>University Village</u></li>
+                    <ul>
+                        <li>This term is used by some to describe the whole section from the Eisenhower to the Dan Ryan to the Railroad Tracks to Ashland and encompassing UIC’s east campus, the new developments along Halsted and Racine, and the historic Taylor Street district.  University Village is also a specific name of a new development of lofts, condos, town homes, and million-dollar single family homes that took the place of the old Maxwell Street Market.  Maxwell Street was a large open-air market which served as a port of entry for immigrants and also was the birthplace of Chicago Blues and the Maxwell Street polish sausage.  University Village was formed in conjunction with UIC’s south campus expansion project to build more dorms amidst much protest in the late 1990s.  The University Village development sparked other similar building projects nearby.  University Commons rehabbed the old produce docks along the Railroad Tracks between Morgan and Racine.  Roosevelt Square is a sprawling, multi-phase development that stands in place of the old ABLA government projects.  These areas are filled mostly by yuppies and are fairly multi-ethnic.</li>
+                    </ul>
+                    <li><u>Pilsen</u></li>
+                    <ul>
+                        <li>Just south of the Railroad Tracks all the way down to Cermak and between Canal and Western is Pilsen.  Pilsen got its name from the Central and Eastern European immigrants who settled there early on and named it after a city back in what is now the Czech Republic – <i>Pilzn</i>.  Much of the architecture reflects this influence.  Beginning in the 1950s Pilsen became a major Mexican-American community for which it is world famous.  It hosts the National Museum of Mexican Art, annual festivals like Fiesta Del Sol, and as you can imagine there are great spots for Mexican food.  On the eastern corridor of Pilsen along Halsted there is the Chicago Arts District – the largest artist colony in the city with studios and galleries open to the public on the second Friday of each month.  Approximately 15,000 artists have lived there since 1960.  Much of it is due to the patronage of the Podmajersky family.  Gentrification has also seeped into Pilsen, though, and is causing rent and property taxes to go up, especially in east Pilsen.</li>
+                    </ul>
+                    <li><u>Near West Side</u></li>
+                    <ul>
+                        <li>We use the designation of Near West Side to refer to the largely African-American and poorer parts towards the western edge of the UIC Area, although ‘Near West Side’ is technically the name of the larger Community Area.  Several government subsidized apartment complexes (ABLA) remain and will remain woven throughout this segment of the neighborhood.  The farther west you go towards Douglas Park and Lawndale, you will enter a predominantly African-American community.  Some economic development has occurred in this area in recent years, especially surrounding the Jewel-Osco and Costco on Ashland.  Fosco Park also has a new community center with state-of-the-art facilities serving this area.  The Cook County Juvenile Detention Center and the FBI building can also be found along Roosevelt by Ogden.</li>
+                    </ul>
+                    <li><u>Little Italy</u></li>
+                    <ul>
+                        <li>The northwest quadrant of the UIC Area is roughly referred to as Little Italy.  This includes the Tri-Taylor residential plot in the far northwestern corner, home to tree-lined streets and quaint row houses.  It also includes the Illinois Medical District, home to UIC Hospital, Rush University Medical Center, the Jesse Brown VA Hospital, and the Stroger Cook County Hospital (the setting for the TV show <i>ER</i>), among other medical related facilities.  But the main strip of Little Italy runs along Taylor Street and includes not only a fine selection of Italian fare, but still a large number of Italian-American residents.  There’s a National Italian American Sports Hall of Fame, the ever popular Mario’s Italian Ice stand, and the famed Shrine of Our Lady of Pompeii, among many other notable places.</li>
+                    </ul>
+                </ul>
+                <p>So there are roughly four major quadrants surrounding the University of Illinois at Chicago: University Village, Pilsen, the Near West Side, and Little Italy.  All within walking distance you have students, professionals, artists, Mexicans, Blacks, and Italians, among others.  Sounds like a microcosm of Antioch, doesn’t it?  Immanuel desires to see a movement of the gospel transcend these ethnic, class, and sometimes geographical boundaries so that people from the UIC Area come together to worship the one true God.  By becoming a member at Immanuel you are joining us on a mission to the UIC Area.</p>
+                <img src="uic_map.png" alt="">
+                <md-button class="md-raised-primary" v-on:click="setPage('Chicago Statistics')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Appendum')">Next</md-button>
+            </div>
+            <div v-if="page == 'Appendum'">
+                <h1>Appendum</h1>
+                <h2>Core Convictions Regarding Children's Ministry</h2>
+                <p>The following are the core convictions of our Children’s Ministry that guide us in fulfilling our mission of seeing kids enjoy and proclaim the Good News in our great city:</p>
+                <ol>
+                    <li><b>Children are important!</b></li>
+                    <ul>
+                        <li>Scriptures like Psalm 127:3-5 and Luke 17:2 remind us that children are important in God’s eyes.  For the most part, our center-city culture says the opposite – children are a burden to be avoided altogether or postponed indefinitely.  We desire to cultivate a church culture that values kids.</li>
+                    </ul>
+                    <li><b>Children have a place in the city.</b></li>
+                    <ul>
+                        <li>For most center-city dwellers, if they do settle down and have kids, they eventually move out to the suburbs.  We believe it’s not only possible, but necessary for Christians to remain in the city to raise their kids.  In cultivating a church culture that values kids, we seek to establish a counter-culture that affects the neighborhood for the good over the long haul.  It will be hard, but we want to provide a support network that helps families stay in the city and transform it.</li>
+                    </ul>
+                    <li><b>Children should be included in the community.</b></li>
+                    <ul>
+                        <li>Children are born guilty of and bent on sin (cf. Psalm 51:5) and in need of salvation.  Thus they are not full members of the church community and are not admitted to the Lord’s Table until they have demonstrated evidence of conversion and been baptized.  However, they should be welcomed and integrated into the community life (just like an adult non-believer) in the hopes that they will come to experience the living God themselves.  We feel that it is mutually beneficial for kids and adults <i>not</i> to be segregated.</li>
+                        <li>This conviction applies to all of community life, including Sunday gatherings for worship.  In the Bible (and throughout the vast majority of church history), when the people of God were assembled in the Lord’s presence, the children were included (cf. Deuteronomy 31:12-13, Joshua 8:35).  We believe that children should be in the worship service with their parents as early as possible (we strongly recommend by age 6).  </li>
+                        <li>This exposes them to the rhythms of community life so that they can hopefully one day take their place as full-fledged members of it.  Research shows that a staggering percentage of kids raised in the church disappear from church life after leaving their high school youth group or college campus ministry.  We seek to teach kids God’s plan for the local church and assimilate them into its life and mission at an early age.  We provide a Kids Corner for very young children as a service to parents, but even there kids are being prepared to join mom and dad in the service.</li>
+                    </ul>
+                    <li><b>Parents take the lead.</b></li>
+                    <ul>
+                        <li>The community plays a crucial role in the development and discipleship of its children, but the main responsibility lies with the parents, especially the fathers (cf. Deuteronomy 6:7, Colossians 3:18-22).  Parents do this by modeling godly living and joyful worship, by disciplining their kids, by maintaining family devotions and prayers, by cultivating caring relationships with their kids, and by teaching their children the great truths and traditions of the Christian faith.  As a church we seek to do all we can to equip parents for this task.</li>
+                    </ul>
+                    <li><b>Keep it simple.</b></li>
+                    <ul>
+                        <li>At Immanuel we want to keep programs to a minimum.  A popular trend among churches is to establish specialized ministries to address the particular needs of groups based on age, sex, marital status, and even career fields.  While it is true that there are unique needs for specific groups that must be cared for differently, Immanuel believes that the best ministry happens organically.  As an intentionally small church whose goal is to constantly plant other churches, simplicity is an essential value.  We want to avoid elaborate programs that require intensive man-power and/or cause too many people to miss the Sunday worship services.</li>
+                    </ul>
+                    <li><b>Be Missional.</b></li>
+                    <ul>
+                        <li>Absolutely everything we do as a church has to contribute to our mission to advance God’s kingdom in the UIC Area.  We seek to reach our own kids with the gospel, reach other neighborhood kids with the gospel, and train children to reach their world with the gospel.  Children’s Ministry at Immanuel is not about entertaining our kids or insulating them from the world or making them into nice, clean-cut ‘Christian’ kids, but it exists to help us reach our neighborhood for Christ and make the kids that we encounter into radical, sold-out, life-long followers of him.</li>
+                    </ul>
+                </ol>
+
+                <h2>Immanuel's Bylaws</h2>
+                <p>A copy of Immanuel’s Bylaws can be found by clicking <a href="http://www.immanuel-baptist.net/about/Bylaws.pdf" target="_blank">here</a>.</p>
+                
+                <md-button class="md-raised-primary" v-on:click="setPage('Chicago Neighborhoods')">Prev</md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('Appendum')">Done</md-button>
+
             </div>
         </div>
 
