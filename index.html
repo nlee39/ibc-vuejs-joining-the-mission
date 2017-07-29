@@ -1,19 +1,26 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vue-material@0.7.4"></script>
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/vue-material@0.7.4/dist/vue-material.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div id="ibc-joining-the-mission">
+        <md-button class="mobile_sidenav_button" v-on:click="openSideNav()">
+            <md-icon class="hamburger">menu</md-icon>
+        </md-button>
+        <md-sidenav class="md-left" ref="mobile_sidenav" id="mobile_sidenav">
+        </md-sidenav>
+
 
         <!-- Side Nav -->
-        <div class="sidenav md-card">
+        <div class="sidenav desktop_sidenav md-card" id="desktop_sidenav">
             <md-list>
                 <md-list-item>
                     <md-button md-menu-trigger v-on:click="setPage('Welcome')"><span>Welcome</span>
@@ -1564,8 +1571,8 @@
             </div>
         </div>
 
-
-        <script src="main.js"></script>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

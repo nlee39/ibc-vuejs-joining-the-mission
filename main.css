@@ -1,14 +1,48 @@
 .sidenav {
-    position: absolute;
+    position: fixed;
     width: 300px;
     height: 100vh;
 }
 
 .current-page {
     position: absolute;
-    padding: 16px;
+    padding: 32px;
     left: 300px;
     right: 0;
     top: 0;
     height: 100vh;
+}
+
+.mobile_sidenav_button {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .md-sidenav-content, .md-backdrop.md-sidenav-backdrop{
+        position: fixed !important;
+    }
+
+     .sidenav.desktop_sidenav {
+        display: none;
+    } 
+
+    .current-page {
+        left: 0px;
+        top: 32px;
+    }
+
+    .mobile_sidenav_button {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0px;
+        margin-left: 0px;
+        font-size: 32px;
+    }
 }
