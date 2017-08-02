@@ -12,12 +12,13 @@
 
 <body>
     <div id="ibc-joining-the-mission">
+
+        <!-- Hamburger -->
         <md-button class="mobile_sidenav_button" v-on:click="openSideNav()">
             <md-icon class="hamburger">menu</md-icon>
         </md-button>
         <md-sidenav class="md-left" ref="mobile_sidenav" id="mobile_sidenav">
         </md-sidenav>
-
 
         <!-- Side Nav -->
         <div class="sidenav desktop_sidenav md-card" id="desktop_sidenav">
@@ -62,6 +63,7 @@
                         <md-menu-content>
                             <md-menu-item v-on:click="setPage('Joining The Mission')">Joining The Mission</md-menu-item>
                             <md-menu-item v-on:click="setPage('Why Membership? 01')">Why Membership</md-menu-item>
+                            <md-menu-item v-on:click="setPage('FAQs')">FAQs</md-menu-item>
                             <md-menu-item v-on:click="setPage('How Do I Become A Member?')">How Do I Become A Member?</md-menu-item>
                             <md-menu-item v-on:click="setPage('What Do I Do As A Member?')">What Do I Do As A Member?</md-menu-item>
                         </md-menu-content>
@@ -126,13 +128,13 @@
 
             <!-- Welcome -->
             <div v-if="page == 'Welcome'">
-                <img src="chicago_skyline.png" alt="">
-                <img src="ibc_logo.png" alt="">
-                <img src="immanuel_summer_retreat_members.png" alt="">
+                <img src="chicago_skyline.png" style="width: 500px" align="middle" alt="">
+                <img src="immanuel_summer_retreat_members.png" style="width: 500px" alt="">
+                <img src="ibc_logo.png" style="width: 300px" align="middle" alt="">
 
-                <span>Welcome to</span>
-                <h2><i>Joining the Mission</i></h2>
-                <span>Membership at Immanuel</span>
+                <h2><center>Welcome to</center></h2>
+                <h2><center><i>Joining the Mission</i></center></h2>
+                <h2span><center>Membership at Immanuel</center></h2>
                 <p>This is for those who want to get to know our church at a deeper level and learn what it would mean to become
                     part of us and join with us on our mission in Chicago.
                 </p>
@@ -230,7 +232,7 @@
                     deeper and higher!
                 </p>
                 <a href="gospel_trampoline.png" target="_blank">
-                    <img src="gospel_trampoline.png" alt=""></a>
+                    <img src="gospel_trampoline.png" style="width: 500px" alt=""></a>
                 <p>As we go deeper into the darkness that is in our hearts, we will peel back more and more layers of idols.
                     We should constantly be seeking to go underneath the surface sins and see the deep-seated root sins.
                     The deeper we go in repentance the higher we can bounce in faith as we realize the amazing truth of the
@@ -290,7 +292,7 @@
                 <p>Review the picture below and the list and grid on the next few pages because the greater awareness we have
                     of our sin combined with a growing awareness of God’s holiness is what will enlarge our awe and wonder
                     at God’s grace in the cross of Christ.</p>
-                <a href="gods_holiness_vs_mans_sinfulness.png" target="_blank"><img src="gods_holiness_vs_mans_sinfulness.png" alt=""></a>
+                <a href="gods_holiness_vs_mans_sinfulness.png" target="_blank" style="width: 500px" ><img src="gods_holiness_vs_mans_sinfulness.png" alt=""></a>
                 <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 01')">
                     Prev
                 </md-button>
@@ -467,7 +469,7 @@
                     Mt. 19:28, Acts 3:21, and especially Col. 1:20.
                 </p>
                 <p>Perhaps the diagram below will be of some help in getting the ‘big picture’.</p>
-                <a href="cosmic_angle_timeline.png" target="_blank"><img src="cosmic_angle_timeline.png" alt=""></a> 
+                <a href="cosmic_angle_timeline.png" target="_blank"><img src="cosmic_angle_timeline.png" style="width: 500px" alt=""></a> 
                 <md-button class="md-raised-primary" v-on:click="setPage('Idolatry 04')">
                     Prev
                 </md-button>
@@ -800,6 +802,11 @@
             </div>
             <div v-if="page == 'Why Membership? 01'">
                 <h1>Why Membership?</h1>
+                <p>
+                <audio controls>
+                    <source src="why_membership_01.mp3" type="audio/mpeg">
+                </audio>
+                </p>
                 <ol>
                     <li>Christ left behind a
                         <u>community</u>.</li>
@@ -871,12 +878,14 @@
             </div>
             <div v-if="page == 'Why Membership? 02'">
                 <h1>Why Membership?</h1>
+                <audio controls>
+                    <source src="why_membership_02.mp3" type="audio/mpeg">
+                </audio>
                 <ol start="4">
                     <li>Community teaches
                         <u>submission</u>.</li>
                     <ul>
-                        <li>suspicion => authority
-                            <=r ebellion</li>
+                        <li>suspicion => authority <= rebellion</li>
                                 <li>Arena:</li>
                                 <ul>
                                     <li>Family (Eph. 5:22 – 6:4)</li>
@@ -906,11 +915,24 @@
                     <li>Community requires
                         <u>commitment</u>.</li>
                     <ul>For some more on these ideas we encourage you to pick up Joshua Harris’ little book called,
-                        <a href="http://amzn.com/1590523652" target="_blank">Stop Dating the Church: Fall in Love with the Family of God</a>                        or Kevin DeYoung and Ted Kluck’s
+                        <a href="http://amzn.com/1590523652" target="_blank">Stop Dating the Church: Fall in Love with the Family of God</a> or Kevin DeYoung and Ted Kluck’s
                         <a href="http://amzn.com/0802458378" target="_blank">Why We Love the Church: In Praise of Institutions and Organized Religion</a>.
                     </ul>
                 </ol>
+                
+                <md-button class="md-raised-primary" v-on:click="setPage('Why Membership? 01')">
+                    Prev
+                </md-button>
+                <md-button class="md-raised-primary" v-on:click="setPage('FAQs')">
+                    Next
+                </md-button>
+            </div>
+            <div v-if="page == 'FAQs'">
+                <h1>Why Membership?</h1>
                 <h2>FAQs</h2>
+                <audio controls>
+                    <source src="faqs.mp3" type="audio/mpeg">
+                </audio>
                 <p><i>Okay, but did Jesus and the NT really have in mind all this (buildings and budgets and membership processes) when they talked about Christian community?</i></p>
                 <ol>
                     <li>An understanding of the
@@ -930,7 +952,7 @@
                     <li>
                         <u>Accountability</u>.</li>
                 </ol>
-                <p><i>Okay, but did Jesus and the NT really have in mind all this (buildings and budgets and membership processes) when they talked about Christian community?</i></p>
+                <p><i>I’ve been burned before by churches.  What if this church hurts me?</i></p>
                 <ul>
                     <li>There’s no perfect church!</li>
                     <li>“If you were to join a perfect church, I am sure it would not be perfect after you had been admitted
@@ -953,20 +975,25 @@
                     </li>
                 </ul>
                 <li>GOSPEL + MISSION + CHURCH = !!!!!</li>
-                <md-button class="md-raised-primary" v-on:click="setPage('Why Membership? 01')">
+
+                <md-button class="md-raised-primary" v-on:click="setPage('Why Membership? 02')">
                     Prev
                 </md-button>
                 <md-button class="md-raised-primary" v-on:click="setPage('How Do I Become A Member?')">
                     Next
                 </md-button>
             </div>
+
             <div v-if="page == 'How Do I Become A Member?'">
                 <h1>How Do I Become A Member?</h1>
+                <audio controls>
+                    <source src="how_do_i_become_a_member.mp3" type="audio/mpeg">
+                </audio>
                 <ol>
                     <li>The first requirement for membership at Immanuel is faith in Christ as your Lord and Savior, which should
                         be accompanied by baptism.</li>
                     <li>The process to become a member follows these steps:</li>
-                    <ol>
+                    <ol type="i">
                         <li>You attend Immanuel regularly for a few months.</li>
                         <li>You notify an Elder of your interest in becoming a member.</li>
                         <li>You go through <i>Joining the Mission</i> materials.</li>
@@ -987,6 +1014,9 @@
             </div>
             <div v-if="page == 'What Do I Do As A Member?'">
                 <h1>What Do I Do As A Member?</h1>
+                <audio controls>
+                    <source src="what_do_i_do_as_a_member.mp3" type="audio/mpeg">
+                </audio>
                 <ol>
                     <li>Sign and adhere to
                         <u>the Church Covenant</u>.</li>
@@ -1064,6 +1094,9 @@
             </div>
             <div v-if="page == 'Immanuel\'s History'">
                 <h1>Immanuel's History</h1>
+                <audio controls>
+                    <source src="immanuels_history.mp3" type="audio/mpeg">
+                </audio>
                 <ol type="A">
                     <li>The Dream</li>
                     <ol>
@@ -1154,10 +1187,10 @@
             </div>
             <div v-if="page == 'Immanuel\'s Mission'">
                 <h1>Immanuel's Mission</h1>
-                <p>The <b>mission</b> of Immanuel Baptist Church is </p>
-                <p>to be a multiplying community </p>
-                <p>that enjoys and proclaims the Good News of Christ </p>
-                <p>in the great city of Chicago.</p>
+                <p><center>The <b>mission</b> of Immanuel Baptist Church is </center></p>
+                <p><center>to be a multiplying community </center></p>
+                <p><center>that enjoys and proclaims the Good News of Christ </center></p>
+                <p><center>in the great city of Chicago.</center></p>
                 
                 <md-button class="md-raised-primary" v-on:click="setPage('Statement Of Faith')">Prev</md-button>
                 <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Vision')">Next</md-button>
@@ -1213,7 +1246,7 @@
                 <p>The bottom line is that if you’re familiar with a type of church government where all the decisions are made from the top and come down from on high you might have to adjust to the way Immanuel works and the amount of authority delegated to the membership.  However, if you’re from a tradition where the congregation wields quite a bit of power it may be a change for you to learn to submit to the authority of the Elders and see them as your leaders (cf. Heb. 13:17).</p>
                 <p>The Deacons, following the prototype in Acts 6:1-6, are by definition servants.  They are qualified men and women who are committed to cheerfully and sacrificially serving the body in whatever way the Elders see fit to use them.  The role of Deacon is not a leadership role in the way that Elder is, but it is an important part of the church’s structure.  The task of the Deacons is to relieve the Elders of duties that might detract from their primary role as spiritual leaders.  The Elders must be able to give themselves fully to such things as shepherding, overseeing, teaching, counseling, and praying.  The Deacons also often play an advisory role to the Elders.</p>
                 <p>On the next page you will find a chart that’s meant to help picture the authority structures set up in the church and generally how things operate at Immanuel.</p>
-                <a href="immanuel_organization.png" target="_blank"><img src="immanuel_organization.png" alt=""></a>
+                <a href="immanuel_organization.png" target="_blank"><img src="immanuel_organization.png" style="width: 500px" alt=""></a>
                 <md-button class="md-raised-primary" v-on:click="setPage('Immanuel\'s Values')">Prev</md-button>
                 <md-button class="md-raised-primary" v-on:click="setPage('On Complementarianism')">Next</md-button>
             </div>
@@ -1497,7 +1530,7 @@
                 <md-button class="md-raised-primary" v-on:click="setPage('Chicago Neighborhoods')">Next</md-button>
             </div>
             <div v-if="page == 'Chicago Neighborhoods'">
-                <h1>Appendum</h1>
+                <h1>Chicago</h1>
                 <h2>Chicago Neighborhoods</h2>
                 <h3><u>The UIC Area</u></h3>
                 <p>Chicago is a massive city, but it’s really just a collection of small towns.  There are officially 77 Community Areas that make up the city and around 183 distinct neighborhoods.   If you’re going to understand Chicago, you’ve got to understand its neighborhoods, which is another reason why a hyper-local approach to ministry is so crucial.</p>

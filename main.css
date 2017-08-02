@@ -1,3 +1,14 @@
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+audio {
+    padding: 16px;
+    margin: auto;
+}
+
 .sidenav {
     position: fixed;
     width: 300px;
