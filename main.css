@@ -4,9 +4,10 @@ img {
     display: block;
 }
 
-audio {
+#ibc-joining-the-mission audio {
     padding: 16px;
     margin: auto;
+    height: 75px;
 }
 
 .sidenav {
